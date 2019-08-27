@@ -1,0 +1,810 @@
+/*loader*/
+#preloader {position:fixed; z-index:99999; background:rgba(0,0,0,0.5); width:100%; height:100%; top:0px; left:0px;}
+#preloader img {position:absolute; left:50%; margin-top:-30px; top:50%; margin-left:-30px;}
+
+/*SRZ*/
+a, .btn{outline:none !important}
+header {height: 75px;background: #f4f4f4;line-height: 75px;border-bottom: 1px solid #d6d2d2;}
+.srzWrapper {}
+.srzWrapper .headerTopBanner{/*background:url('../images/headerTopBanner.png') no-repeat 0 0;height: 417px;background-size:cover;*/position: relative;margin:0 0 45px;}
+.srzWrapper .headerTopBanner.headerTopBanner{margin:0 0 15px;}
+.srzWrapper .headerTopBanner .headerTopInfo{position:absolute;top: 50%;transform: translateY(-50%);width: 100%;max-width: 530px;background: rgba(255,255,255,0.95);padding: 35px 30px;}
+.srzWrapper .headerTopBanner .headerTopInfo h1{color:#383838;font:28px/30px 'hindregular';margin:0;padding:0 0 20px;}
+.srzWrapper .headerTopBanner .headerTopInfo h1 span{color:#f04943;font-family:'hindbold';}
+.srzWrapper .headerTopBanner .headerTopInfo p{margin: 0;font:20px/22px 'hindlight';color: #383838;padding: 0 0 20px;}
+.srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:active:hover, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:hover, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:active:focus, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:focus{color: #fff;background-color: #2380f2;border-color: #2380f2;text-transform: uppercase;padding: 10px 60px 10px 20px;font: 18px/20px 'hindmedium';position: relative;box-shadow: none;border-radius: 0;}
+
+.srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:after, .srzUnlimitedMagArt .srzMagArtInner h2:before, /*.srzFormBlock .inputMain .srzEmail, .srzFormBlock .inputMain .srzName, .srzFormBlock .inputMain .srzpNumber, .srzFormBlock .inputMain .srzorgName,*/ .pick-planing .planingInner h2:after, .eq header.rgt .NavSearchblock ul li.Navmenu:before, .eq header.rgt .NavSearchblock ul li.srzSearch:after, .eq header.rgt .settingDownblock ul li.srzsetting:after, .eq header.rgt .settingDownblock ul li.download:after, .eq header.lft h2:before{background: url('../images/srhIcons.png') no-repeat 0 0}
+.srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:after {content:'';position:absolute;background-position:0 0;height:14px;width:21px;right:20px;top:50%;transform:translateY(-50%);}
+.headerTopBannerSlider figure img {width:100%;}
+
+.srzUnlimitedMagArt .srzMagArtInner h2.one1:before {left:-30px;}
+.srzUnlimitedMagArt .srzMagArtInner h2.one2:before {left:-30px;}
+.srzUnlimitedMagArt .srzMagArtInner h2.one3:before {left:-30px;}
+.srzUnlimitedMagArt .srzMagArtInner h2.one1:before, .srzUnlimitedMagArt .srzMagArtInner h2.one2:before, .srzUnlimitedMagArt .srzMagArtInner h2.one3:before {content: '';position: absolute;background-position: -39px 0;height: 32px;width: 24px;top: 0;}
+
+.srzUnlimitedMagArt{text-align:center;}
+.srzUnlimitedMagArt.highlights{background:#E4F5FC;padding: 45px 0 0;margin: 0 0 45px;}
+.srzUnlimitedMagArt .srzMagArtInner{padding:0 15px;}
+.srzUnlimitedMagArt .srzMagArtInner h2{color:#3399ff;font:30px/33px 'hindregular';margin:0;padding:0 0 25px;position:relative;display: inline-block;}
+.srzUnlimitedMagArt .srzMagArtInner h2 span{color:#f04943}
+.srzUnlimitedMagArt .srzMagArtInner ul{width: 100%;list-style:none;display:inline-block;padding:40px 0 10px;margin:0;}
+.srzUnlimitedMagArt .srzMagArtInner ul li{display:inline-block;padding: 0 15px 25px;vertical-align: top;width:16.6666%;}
+.srzUnlimitedMagArt .srzMagArtInner ul li a{color:#2e2e2e;font:18px/18px 'hindsemibold';text-decoration:none;}
+.srzUnlimitedMagArt .srzMagArtInner ul li a figure{padding:0 0 15px;}
+.srzUnlimitedMagArt .srzMagArtInner ul li a img{display:inline-block;}
+.srzUnlimitedMagArt .srzMagArtInner a.srzmanyMore{color:#2e2e2e;font:18px/18px 'hindsemibold';text-decoration:none;margin:0 0 30px;display:block;}
+.srzUnlimitedMagArt .srzMagArtInner .srzHights {padding-top:20px;}
+.srzUnlimitedMagArt .srzMagArtInner .srzHights .srzHightsItems:last-child{padding:0 0 55px;}
+.srzUnlimitedMagArt .srzMagArtInner .srzHights .srzHightsItems{display: inline-block;width:65%;}
+.srzUnlimitedMagArt .srzMagArtInner .srzHights .srzHightsItems figure{display: table-cell;padding: 0 10px 0 0;width:110px;}
+.srzUnlimitedMagArt .srzMagArtInner .srzHights .srhHightlightInfo{text-align: left;display: table-cell;vertical-align: middle;}
+.srzUnlimitedMagArt .srzMagArtInner .srzHights .srhHightlightInfo p.hilightTxt{margin: 00;color: #434343;font: 22px/24px 'hindlight';}
+.srzUnlimitedMagArt .srzMagArtInner .srzHights .srhHightlightInfo p.hilightTxt a{margin: 0;text-decoration:none;color: #1a90de;font: 22px/24px 'hindsemibold';border-bottom:2px solid #d1e9f8}
+.pdleft {padding:0 !important;}
+.srzFormBlock ul.group {display:table;width: 100%;text-align: left;padding: 0;vertical-align: middle;margin:0;}
+.srzFormBlock {padding:0 0 60px;}
+
+.srzFormBlock .inputMain span.srzNamelbl,.srzFormBlock .inputMain span.srzEmaillbl,.srzFormBlock .inputMain span.srzpNumberlbl,.srzFormBlock .inputMain span.srzorgNamelbl{position: absolute;top: 50%;transform: translate(0, -50%);left: 45px;color:#a1a1a1;font:18px/18px 'hindlight';}
+.srzFormBlock .inputMain span.srzName{position: absolute;height: 28px;width:30px;left: 10px;top: 50%;transform: translateY(-50%);}
+.srzFormBlock .inputMain span i{font-size: 28px;color: #a5a1a1;}
+.srzFormBlock .inputMain span.srzEmail{position: absolute;height: 28px;width: 30px;left: 10px;top: 50%;transform: translateY(-50%);}
+.srzFormBlock .inputMain span.srzpNumber{position: absolute;height:31px;width: 21px;left: 13px;top: 50%;transform: translateY(-50%);}
+.srzFormBlock .inputMain span.srzpNumber i{font-size: 46px;height: 29px;line-height: 34px;}
+.srzFormBlock .inputMain span.srzorgName{position: absolute;height: 29px;width: 30px;left: 10px;top: 50%;transform: translateY(-50%);}
+.srzFormBlock .inputMain .form-group {position:relative;margin:0 0 5px;}
+.srzFormBlock .inputMain .form-group .form-control  {height:50px;border:0;box-shadow:none;color: #2380f2;font:18px/18px 'hindlight';border: 1px solid #d6d2d2;;padding-left:45px;border-radius: 5px;}
+.srzFormBlock ul.group li{display:inline-block;vertical-align: middle;margin: 0;padding: 0 5px 0;width: auto;}
+/*.srzFormBlock ul.group li .select2-container {width:100% !important;}*/
+
+.srzFormBlock ul.group li .form-group{margin:0;}
+.srzFormBlock ul.group li.lblText{font:17px/22px 'hindmedium';color:#646464;}
+
+.srzFormBlock ul.group li.dropDownInfo input {border:0;box-shadow:none;color: #2380f2;background-color: #fff;border-bottom:1px solid #d6d2d2;border-radius:0; font: 18px/20px 'hindregular';}
+.srzFormBlock a.btn-submit, .srzFormBlock a.btn-submit:active:hover, .srzFormBlock a.btn-submit:hover, .srzFormBlock a.btn-submit:active:focus, .srzFormBlock a.btn-submit:focus{color: #fff;background-color: #2380f2;border-color: #2380f2;text-transform: uppercase;margin:20px 0 0;padding: 15px 55px;font: 18px/20px 'hindregular';position: relative;box-shadow: none;border-radius: 0;}
+.srzFormBlock .inputMain .form-group .form-control::-webkit-input-placeholder {color:#a1a1a1;font-family:'hindlight';line-height:40px;}
+.srzFormBlock .inputMain .form-group .form-control::-moz-placeholder {color:#a1a1a1;font-family:'hindlight';line-height:40px;}
+.srzFormBlock .inputMain .form-group .form-control:-ms-input-placeholder  {color:#a1a1a1;font-family:'hindlight';line-height: 40px;}
+.srzFormBlock .inputMain .form-group .form-control:-moz-placeholder {color:#a1a1a1;font-family:'hindlight';line-height:40px;}
+
+.form-innerNew {text-align:left;}
+.form-innerNew .select2-container .select2-selection--single {height:34px !important;}
+.form-innerNew label{font:17px/22px 'hindmedium';color:#646464;margin:0;width: 250px;display: inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;direction: ltr;position:relative;}
+.mand{color: #ff0000;}
+.srzFormBlock p.mand{text-align:left;margin-top:-13px;font-size: 13px;}
+.usericon {margin-left:3px;}
+.usericon img{margin-top:-6px;}
+span.tooltips{background: #fff;box-shadow: 0px 0px 5px #ddd;display: block;padding: 15px;position: absolute;bottom:93px;left: 24px;width: 100%;font: 15px/20px 'hindmedium';}
+span.tooltips:after{content: '';border: 15px solid transparent;border-top: 15px solid #f1f1f1;position: absolute;bottom: -31px;left: 50%;transform: translateX(-50%);}
+/*.form-innerNew label.usericon:after{content: ''; position:absolute;right:0;background:url('../images/tooltip.jpg') no-repeat 0 0;width:15px;height:15px;}*/
+.srzFormBlock .form-innerNew .form-control, .srzFormBlock .form-innerNew .form-control:focus {padding-left:0;border: 0;box-shadow: none;color: #2380f2;background-color: #fff;border-bottom: 1px solid #d6d2d2;border-radius: 0;font: 18px/20px 'hindregular';}
+.select2-dropdown {border:1px solid #aaa !important;color: #2380f2;background-color: #fff;font: 16px/16px 'hindregular';}
+.select2-dropdown li{background:#fff;}
+.srzFormBlock .form-control {border: 1px solid #ccc;border-radius: 3px;box-shadow: none;margin-bottom: 15px;}
+.srzFormBlock .form-control:hover, .form-control:focus, .form-control:active {box-shadow: none;}
+.srzFormBlock .form-control:focus {border: 1px solid #34495e;}
+.srzFormBlock .select2.select2-container {width:100% !important;}
+.srzFormBlock .select2.select2-container .select2-selection {border:0;outline: none;border-radius:0;transition: all 0.15s ease-in-out; border-bottom: 1px solid #d6d2d2;}
+.srzFormBlock .select2.select2-container .select2-selection .select2-selection__rendered {color: #2380f2;background-color: #fff;font: 18px/32px 'hindregular';}
+.srzFormBlock .select2.select2-container .select2-selection .select2-selection__arrow {background:transparent;border-left:0;-webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;border-radius: 0 3px 3px 0;}
+.select2-container .select2-selection--single .select2-selection__rendered {padding-left:0 !important;}
+.select2-container--default .select2-selection--single .select2-selection__arrow {height:33px !important;}
+
+.srz-plans-tabinner {}
+.srz-plans-tabinner .nav{text-align: center;margin:15px 0;}
+.srz-plans-tabinner .nav li{display: inline-block;background: transparent;border: 1px solid #9c9c9c;max-width: 280px;width: 100%;margin-right: -4px;}
+.srz-plans-tabinner .nav li a{transition:0.5s all;font: 18px/18px 'hindsemibold';text-decoration:none;background:transparent;color:#9c9c9c;}
+.srz-plans-tabinner .nav li.active{border:1px solid #3399ff;background-color:#3399ff;}
+.srz-plans-tabinner .nav li a:hover, .srz-plans-tabinner .nav li a:focus, .srz-plans-tabinner .nav li a:active:focus{transition:0.5s all;font: 18px/18px 'hindsemibold';text-decoration:none;background-color:transparent;}
+.srz-plans-tabinner .nav li.active a, .srz-plans-tabinner .nav li:focus a {color: #fff;/*border:1px solid #3399ff;*/font: 18px/18px 'hindsemibold';text-decoration:none;}
+
+/*Login*/
+.loginWrapper header{background:transparent;border:0;height: 200px;}
+.loginWrapper header figure{padding-top: 45px;}
+.loginWrapper footer{position: absolute;bottom: 0;left: 0;right: 0;color: #fff;}
+.loginWrapper footer .footerInner{border-top: 1px solid #424242;padding: 15px 10px;display:inline-block;width:100%;}
+.loginWrapper footer .footerInner ul{padding:0;margin:0;list-style:none;}
+.loginWrapper footer .footerInner ul li{color:#b0b0b0;font:16px/16px 'hindlight';}
+.loginWrapper footer .footerInner ul li:first-child{float:left;}
+.loginWrapper footer .footerInner ul li:last-child{float:right;}
+.loginWrapper footer .footerInner ul li:last-child a{color:#3399ff;padding-left:1px;text-decoration:none;}
+.loginWrapper {background:url('../images/loginbg.jpg') no-repeat 0 0;position:absolute;left:0;bottom:0;right:0;top: 0;background-size: cover;}
+.loginWrapper .loginWrapperInner{text-align: center;}
+.loginWrapper .loginWrapperInner .loginInnerForm{max-width: 425px;display: inline-block;width: 100%;padding: 20px 40px;float: right;}
+.loginWrapper .loginWrapperInner .loginInnerForm form h3{color: #fff;font: 30px/30px 'hindlight';padding: 0;margin: 0;text-align: left;position:relative}
+.loginWrapper .loginWrapperInner .loginInnerForm form h3:before{content: '';position: absolute;top:-45px;left:50%;transform: translateX(-50%);background:url('../images/loginLock.png') no-repeat center center;width:22px;height:31px;}
+.loginWrapper .loginWrapperInner .loginInnerForm form h3 span.lgn{color: #fd5856;font-family: 'hindbold';}
+.loginWrapper .loginWrapperInner .loginInnerForm form span.dashboard{color:#b0b0b0;font:16px/16px 'hindlight';text-align:left;display:block;padding:5px 0 20px;}
+.loginWrapper .loginWrapperInner .loginInnerForm form .form-control{padding: 15px 20px;height: 50px;font:16px/20px 'hindregular';color: #000 !important;outline: none;box-shadow: none;border: 0;}
+
+
+.loginWrapper .loginWrapperInner .loginInnerForm form .btn-default{box-shadow: none;font:16px/36px 'hindregular';max-width: 47%;width: 100%;border:0;}
+
+.loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn {color: #fff;background-color: #fd5856;border-color: #fd5856;margin-right:15px;}
+
+.loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn {color: #525252;background-color: #d6d4d3;border-color: #d6d4d3;}
+
+.srzLogin a, .srzLogin a:hover, .srzLogin a, .srzLogin a:focus, .srzLogin a, .srzLogin a:active, .srzLogin a, .srzLogin a:active:focus{float:right;color: #807575;font: 18px/75px 'hindsemibold';text-decoration: none;}
+.srzLogin a i.fa-user{font-size:18px;display: inline-block;padding-right: 5px;}
+/*Login*/
+
+/*Planing*/
+.srzWrapper .headerTopBanner .PlaningBanner{position: absolute;top: 50%;transform: translateY(-50%);width: 100%;max-width: 530px;}
+.srzWrapper .headerTopBanner .PlaningBanner h1{color:#383838;font:41px/43px 'hindlight';margin:0;padding:0;color:#fff;}
+.pick-planing .planingInner{text-align:center;}
+.pick-planing .planingInner h2{color:#3399ff;font:30px/33px 'hindregular';margin:0;padding:0 0 10px;position:relative;display: inline-block;}
+.pick-planing .planingInner p{margin: 0;color: #5b5b5b;font: 22px/22px 'hindlight';letter-spacing: 1px;padding:0;}
+.pick-planing .planingInner ul.planChoos{padding:20px 0;margin: 0;list-style: none;display:none;}
+.pick-planing.opt1 .planingInner ul.planChoos{display:block !important}
+.pick-planing .planingInner ul.planChoos li{display: inline-block;margin: 0 20px;width: 300px;position:relative}
+.pick-planing .planingInner ul.planChoos li span.planinfo{display:block;font-family: 'hindregular';font-size:24px;padding:15px 0 0;color:#8c8c8c;}
+.pick-planing .planingInner ul.planChoos li a span{line-height:80px;font-size: 36px;font-family: 'hindregular';}
+.pick-planing .planingInner ul.planChoos li:after{content: '';position: absolute;top: -5px;left: 105px;display: inline-block;height:90px;width:90px;border: 1px solid #3399ff;border-radius: 50%;}
+.pick-planing .planingInner ul.planChoos li a:first-child:before{content: '';position: absolute;top: 50%;left: 103px;display: inline-block;height: 1px;background: #cbcbcb;width: 215px;transform: translateY(-50%);}
+.pick-planing .planingInner ul.planChoos li a{display: inline-block;height:80px;width:80px;border-radius: 50%;background:transparent;line-height:80px;color: #3399ff;text-decoration:none;position:relative;}
+.pick-planing .planingInner ul.planChoos li.active a i{color:#fff}
+.pick-planing .planingInner ul.planChoos li a span.selected{display:none}
+.pick-planing .planingInner ul.planChoos li a span.unselected{display:block}
+.pick-planing .planingInner ul.planChoos li.active a span.unselected{display:none}
+.pick-planing .planingInner ul.planChoos li.active a span.selected{display:block;background:#3399ff;border-radius:50%;}
+.pick-planing .planingInner ul.planChoos li:last-child a{background:transparent;color:#3399ff;}
+.pick-planing .planingInner ul.planChoos li:last-child a:before{display:none;}
+.pick-planing .planingInner h2:after{content: '';position: absolute;background-position: -39px 0;height: 32px;width: 24px;top: 0;left:-30px;}
+
+.pick-planing .plannerInnerPayment ul.paymentChoos{padding:0;margin:0 0 50px 0;list-style: none;display:inline-block;width:100%;text-align:center;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li{display:table-cell;position: relative;vertical-align: top;width:20%;margin:10px 0;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li span.recomended{position: absolute;top: 10px;color: #fff;text-transform: uppercase;padding: 5px 30px 5px 15px;font: 12px/12px 'hindbold';left: 5px;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li span.recomended:after{content:'';position:absolute;border: 10px solid transparent;border-right: 10px solid #fff;right:0;top:0;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li span.recomended:before{content:'';position:absolute;border:5px solid transparent;left:-5px;top:16px;}
+
+.pick-planing .plannerInnerPayment ul.paymentChoos li.personal span.recomended{background:#FF733E;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li.personal span.recomended:before{border-right:5px solid #FF733E;}
+
+.pick-planing .plannerInnerPayment ul.paymentChoos li.basic span.recomended{background:#31b1d2;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li.basic span.recomended:before{border-right:5px solid #31b1d2;}
+
+.pick-planing .plannerInnerPayment ul.paymentChoos li.startup span.recomended{background:#8987cd;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li.startup span.recomended:before{border-right:5px solid #8987cd;}
+
+.pick-planing .plannerInnerPayment ul.paymentChoos li.growing-team span.recomended{background:#ef6e9f;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li.growing-team span.recomended:before{border-right:5px solid #ef6e9f;}
+
+.pick-planing .plannerInnerPayment ul.paymentChoos li.enterprise span.recomended{background:#52b87e;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li.enterprise span.recomended:before{border-right:5px solid #52b87e;}
+
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo{padding:15px;-webkit-box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.16);-moz-box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.16);box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.16);margin:0 10px;text-align: center;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo h3{padding: 0;margin: 0;font: 24px/24px 'hindsemiBold';color: #5b5b5b;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo span.userIcon{/*height: 60px;width: 60px;*/display: inline-block;/*line-height: 60px;border-radius: 50%;font-size: 35px;color: #fff;*/margin:5px 0 10px;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:focus, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:hover, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:active:focus, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:active:hover, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:active{font: 15px/22px 'hindmedium';margin:0;max-width: 180px;width: 100%;height: 35px;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.userInfo{margin: 0;font: 16px/16px 'hindregular';padding: 0 0 25px;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo.yearly p.userInfo{padding:0 0 15px;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails{margin: 0;font: 26px/26px 'hindsemiBold';}
+.plannerPaymentInfo p.paymentDetails.years{margin: 0;font:26px/26px 'hindsemiBold' !important;}
+
+/*planopt*/
+.opt1 .plannerPaymentInfo p.paymentDetails.years {margin:25px 0 !important;font: 40px/42px 'hindsemiBold' !important;border: 0 !important;padding: 0 !important;}
+.pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails sub {font: 13px/15px 'hindregular';color: #8c8c8c;display: inline;}
+.plannerPaymentInfo p.paymentDetails.years strike{line-height: 12px;display:inline-block !important;padding:0 0 5px;}
+.plannerPaymentInfo p.paymentDetails.years strike span.actPrice{color: #000;font-size: 28px;line-height:15px;}
+hr.planopt {margin:0;padding:0;border-color:#dcd9d9;width:50px;margin:10px auto 0;}
+.opt1 .plannerPaymentInfo p.paymentDetails.years strike span.actPrice {font-size: 26px;line-height: 26px;}
+.opt1 .plannerPaymentInfo p.paymentDetails.years strike span.actPrice sub{color: #000 !important;font-size: 13px !important;line-height: 13px !important;padding-left: 3px;bottom:3px;font-weight: bold !important;}
+.pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails {border-top: 1px solid #dcd9d9;padding-top: 20px;margin-top: 15px;}
+.pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails {font:40px/45px 'hindsemiBold' !important;}
+.pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li.enterprise .plannerPaymentInfo .planFeature{min-height:340px;}
+/*planopt*/
+
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails sup{font-size: 23px;color: #8c8c8c;top: -34px;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails sub{font: 16px/16px 'hindregular';color: #8c8c8c;display: block;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature{border-top: 1px solid #b1b1b1;padding-top:20px;margin-top: 15px;text-align:left;min-height: 275px;}
+p.priceinfo {padding:20px 0 0;margin: 0;font: 16px/18px 'hindregular';color: #5b5b5b;}
+/*.pick-planing .plannerInnerPayment ul.paymentChoos li.enterprise .plannerPaymentInfo .planFeature {min-height:300px;}*/
+
+
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature h4{padding: 0 0 10px;margin: 0;font:18px/18px 'hindmedium';color: #3b3b3b;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature ul{margin:0;padding:0;list-style:circle}
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature ul li{display:block;margin: 0 0 10px;padding:0 10px 0;font: 15px/17px 'hindregular';color: #8c8c8c;position:relative;width:100%;}
+.plannerPaymentInfoinner {min-height: 295px;}
+.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature ul li:before{content:'';height:5px;width:5px;position:absolute;left:0;top:4px;
+    border-radius: 50%;}
+/*Individual*/
+/*.pick-planing .plannerInnerPayment ul.paymentChoos li.basic .plannerPaymentInfo span.userIcon {background:#31b1d2}*/
+.basic{color:#f4ad00;}
+.basic li:before {background: #f4ad00;}
+.basic-pro{color:#31b1d2}
+
+
+.basic .buyNowBtn, .basic .buyNowBtn:focus,  .basic .buyNowBtn:hover, .basic .buyNowBtn:active:focus, .basic .buyNowBtn:active:hover, .basic .buyNowBtn:active {background-color:#f4ad00;border-color:#f4ad00}
+
+
+
+/*.pick-planing .plannerInnerPayment ul.paymentChoos li.personal .plannerPaymentInfo span.userIcon {background:#FF733E}*/
+.personal{color:#FF733E}
+.personal li:before {background:#FF733E}
+
+.personal .buyNowBtn, .personal .buyNowBtn:focus,  .personal .buyNowBtn:hover, .personal .buyNowBtn:active:focus, .personal .buyNowBtn:active:hover, .personal .buyNowBtn:active {background-color:#FF733E;border-color:#FF733E}
+
+/*startup*/
+/*.pick-planing .plannerInnerPayment ul.paymentChoos li.js-select2 .plannerPaymentInfo  span.userIcon {background:#8987cd}*/
+.startup li:before {background:#8987cd}
+.startup a.buyNowBtn, .startup a.buyNowBtn:focus, .startup a.buyNowBtn:hover, .startup a.buyNowBtn:active:focus, .startup a.buyNowBtn:active:hover, .startup a.buyNowBtn:active {background-color:#8987cd;border-color:#8987cd;}
+.startup{color:#8987cd}
+
+/*startup*/
+.basic-pro li:before {background:#31b1d2}
+.basic-pro .buyNowBtn, .basic-pro .buyNowBtn:focus,  .basic-pro .buyNowBtn:hover, .basic-pro .buyNowBtn:active:focus, .basic-pro .buyNowBtn:active:hover, .basic-pro .buyNowBtn:active {background-color:#31b1d2;border-color:#31b1d2;}
+.basic-pro{color:#31b1d2}
+
+/*growing-team*/
+/*.pick-planing .plannerInnerPayment ul.paymentChoos li.growing-team .plannerPaymentInfo  span.userIcon {background:#ef6e9f}*/
+.growing-team li:before {background:#ef6e9f}
+
+.growing-team .buyNowBtn, .growing-team .buyNowBtn:focus,  .growing-team .buyNowBtn:hover, .growing-team .buyNowBtn:active:focus, .growing-team .buyNowBtn:active:hover, .growing-team .buyNowBtn:active {background-color:#ef6e9f;border-color:#ef6e9f;}
+.growing-team{color:#ef6e9f}
+
+/*enterprise*/
+.pick-planing .plannerInnerPayment ul.paymentChoos li.enterprise .plannerPaymentInfo  span.userIcon {/*background:#52b87e;height: 90px;width: 90px;line-height:90px;font-size:50px;*/margin: 20px 0;}
+.enterprise li:before {background:#52b87e}
+
+.enterprise .buyNowBtn, .enterprise .buyNowBtn:focus,  .enterprise .buyNowBtn:hover, .enterprise .buyNowBtn:active:focus, .enterprise .buyNowBtn:active:hover, .enterprise .buyNowBtn:active {background-color:#52b87e;border-color:#52b87e;}
+.enterprise{color:#52b87e}
+
+.srzChinBusiness{background: #3399ff;color: #fff;padding: 40px 0;margin:0;display:none;}
+.srzChinBusiness .srzChinInner ul.srzChin{padding: 0;margin: 0;display: table;list-style: none;}
+.srzChinBusiness .srzChinInner ul.srzChin li{display: table-cell;vertical-align:middle;padding-right:25px;}
+.srzChinBusiness .srzChinInner ul.srzChin li i.fa-envelope{font-size:60px;}
+.srzChinBusiness .srzChinInner ul.srzChin li{font: 22px/30px 'hindlight';}
+.srzChinBusiness .srzChinInner ul.srzChin li a.contactUsBtn{font-size:60px;}
+
+.srzChinBusiness .srzChinInner ul.srzChin li a.contactUsBtn, .srzChinBusiness .srzChinInner ul.srzChin li a.contactUsBtn:focus, .srzChinBusiness .srzChinInner ul.srzChin li a.contactUsBtn:hover, .srzChinBusiness .srzChinInner ul.srzChin li a.contactUsBtn:active:focus, .srzChinBusiness .srzChinInner ul.srzChin li a.contactUsBtn:active:hover, .srzChinBusiness .srzChinInner ul.srzChin li a.contactUsBtn:active {background-color:transparent;border-color:#fff;max-width:165px;width:100%;font:18px/20px 'hindmedium';padding: 10px 30px;}
+/*Planing*/
+
+
+/*Payment Gate Way*/
+.srzpaymentGateWay .srzpaymentInner{padding: 50px 0 0;}
+.srzpaymentGateWay .srzpaymentInner h3{color:#339ce5;margin: 0 0 20px;padding: 0 0 2px;font: 20px/20px 'hindmedium';border-bottom: 2px solid #339ce5;display: inline-block;}
+.srzpaymentGateWay .srzpaymentInner ul {margin: 0;padding: 0;list-style: none;display: table;width: 100%;}
+.srzpaymentGateWay .srzpaymentInner ul li{display: table-cell;width:470px;vertical-align:middle}
+.srzpaymentGateWay .srzpaymentInner ul li .srzSubsriptions .monthSubscript{border-bottom: 1px solid #e0e0e0;padding: 0 0 10px;margin: 0 0 20px;}
+.srzpaymentGateWay .srzpaymentInner ul li .srzSubsriptions .monthSubscript p{color: #787878;font: 16px/16px 'hindregular';}
+.srzpaymentGateWay .srzpaymentInner ul li .srzSubsriptions .monthSubscript a{color: #339ce5;text-decoration: none;font: 15px/15px 'hindlight';}
+.srzpaymentGateWay .srzpaymentInner ul li .srzSubsriptions .srzUsDol{padding: 0 0 15px;margin: 0 0 15px;border-bottom: 1px solid #e0e0e0;}
+.srzpaymentGateWay .srzpaymentInner ul li .srzSubsriptions .srzUsDol h5{padding: 0 0 5px;margin: 0;font:26px/30px 'hindmedium';color: #ff6138;}
+.srzpaymentGateWay .srzpaymentInner ul li .srzSubsriptions .srzUsDol p{margin: 0;color: #787878;font: 15px/22px 'hindregular';}
+.srzpaymentGateWay .srzpaymentInner ul li .srzSubsriptions .srzautoRenewal h6{margin: 0;padding: 0 0 5px;color: #2d2d2d;font: 18px/18px 'hindregular';}
+.srzpaymentGateWay .srzpaymentInner ul li .srzSubsriptions .srzautoRenewal p{margin: 0;color: #787878;font: 15px/22px 'hindregular';}
+
+.srzpaymentGateWay .srzpaymentInner ul li .paymentForm .form-control, .srzpaymentGateWay .srzpaymentInner ul li .paymentForm .form-control:focus{border-color:#929292;height: 60px;padding: 10px 20px;color: #929292;font: 18px/18px 'hindregular';box-shadow: none;outline: none;}
+.srzpaymentGateWay .srzpaymentInner ul li .paymentForm .form-group{margin:0 0 20px;}
+.srzpaymentGateWay .srzpaymentInner ul li .paymentForm p{margin: 0;color: #949494;font: 12px/14px 'hindregular';}
+.srzpaymentGateWay .srzpaymentInner ul li .paymentForm p a{color: #339ce5;text-decoration: none;font-size: inherit;}
+.srzpaymentGateWay .srzpaymentInner ul li .paymentForm .PayNowBtn{background: #339ce5;border-color: #339ce5;color: #fff;font: 16px/32px 'hindregular';height: 45px;margin: 0 0 15px;}
+.srzpaymentGateWay .srzpaymentInner ul li:nth-child(2){width:50px;position: relative}
+.srzpaymentGateWay .srzpaymentInner ul li:nth-child(2):before{content:'';position:absolute;background:#e0e0e0;height:100%;width:1px;left:50%;transform:translateX(-50%);top:0;}
+/*Payment Gate Way*/
+
+
+/*.srzFormBlock  .bootstrap-select.btn-group .no-results {padding: 5px 10px !important;background: #f5f5f5;text-align: center;height: 30px !important;line-height:20px !important;border:0 !important}*/
+.srzUnlimitedMagArt .srzMagArtInner p.srzInstEnable {font-size:20px;line-height:20px;padding:25px 0 0;color:#f04943;font-weight:bold;}
+
+/*priceplan*/
+.paymentCostInfo {border:1px solid #e0dcdc;padding:25px 25px 35px;border-radius: 10px;box-shadow: 0px 1px 5px #e0dcdc;text-align: center;margin: 0 auto 55px;max-width: 1100px;position:relative;}
+.paymentCostInfo:before {background:#FF6661;left:0;}
+.paymentCostInfo:after {background:#59BC7B;right:0;}
+.paymentCostInfo:before, .paymentCostInfo:after {content:'';height:3px;width:50%;position:absolute;top:0;}
+.paymentCostInfo .noofbeds, .paymentCostInfo .costofbeds, .paymentCostInfo .barInner, 
+.paymentCostInfo .novisiters, .paymentCostInfo .costTotal{display:inline-block; vertical-align: top;padding: 0 40px;}
+.paymentCostInfo .novisiters p, .paymentCostInfo .costTotal p{color: #5CBE81;}
+.paymentCostInfo p{color:#FF6B60;font: 22px/22px 'hindregular';text-transform: uppercase;border-bottom: 1px solid #e0dcdc;padding:15px 0;margin: 0 0 25px;}
+.paymentCostInfo span{color: #ff584f;font: 22px/40px 'hindregular';text-transform: uppercase;display: block;}
+.paymentCostInfo .form-control{max-width: 95px;margin: 0 auto;height: 40px;text-align: center;border-radius: 0;background: #fcfcfc;box-shadow: none;outline: none;color:#8d8d8d;font:18px/18px 'hindregular';}
+.paymentCostInfo .costofbeds{position:relative}
+.paymentCostInfo .costofbeds:after{content:'';position:absolute;height: 50px;right:0;background:#e0dcdc;width:1px;bottom:0;}
+
+.estimatedBlock p{margin: 0 auto 15px;max-width: 1100px;color: #585858;font:22px/22px 'hindregular';}
+.estimatedBlock .estimatedBlockInner {}
+.estimatedBlock .estimatedBlockInner {border:1px solid #e0dcdc;padding:25px;border-radius: 10px;box-shadow: 0px 1px 5px #e0dcdc;text-align: left;margin: 0 auto 35px;max-width: 1100px;;/*max-width:580px;width:100%;*/}
+.estimatedBlock .estimatedBlockInner table {text-align:center;margin: 0;}
+.estimatedBlock .estimatedBlockInner table tr td{text-align:right;padding: 5px;color: #585858;font:22px/22px 'hindregular';border: 0;}
+.estimatedBlock .estimatedBlockInner table tr td.bar{border-top: 1px solid #e0dcdc;padding: 0;}
+.estimatedBlock .estimatedBlockInner table tr td.total{text-align: center;color:#3399ff;font:22px/22px 'hindregular';}
+.estimatedBlock .estimatedBlockInner table tr td.totalNumber1{text-align: right;color:#ff584f;}
+.estimatedBlock .estimatedBlockInner table tr td.tnc{text-align: right !important;}
+.estimatedBlock .estimatedBlockInner table tr td.tnc a{text-align: right;text-decoration: none;font: 12px/13px 'hindregular';text-transform: uppercase;color: #3399ff;}
+.estimatedBlock .estimatedBlockInner table tr td.padSpace{padding:2px 0;}
+.estimatedBlock .estimatedBlockInner table tr td.GetStarted{padding: 0;text-align: right;}
+.estimatedBlock .estimatedBlockInner table tr td.GetStarted {padding: 0;text-align: right !important;}
+.estimatedBlock .estimatedBlockInner table tr td.GetStarted a.btnGetStarted{color: #fff;background-color: #3399ff;border-color: #3399ff;font:20px/30px 'hindregular';max-width: 160px;width: 100%;margin:30px 0 0;}
+.estimatedBlock .estimatedBlockInner table tr td:first-child{padding-right:25px;text-align:left;color: #3399ff;font:20px/20px 'hindregular';}
+.estimatedBlock .estimatedBlockInner table tr td:first-child span{padding: 0 1px;color: #585858;font-size:14px;text-transform: lowercase;vertical-align: top;line-height: 18px;}
+/*priceplan*/
+
+/*Error Message*/
+.formValidErrMsg {max-width:350px;width:100%;position:fixed;bottom:0;right:15px;transition:0.5s all;}
+/*Error Message*/
+
+/*Responsive*/
+@media(max-width:1599px){
+    .srzWrapper .headerTopBanner .headerTopInfo {padding:20px;}
+    .srzWrapper .headerTopBanner .headerTopInfo h1 {font-size:30px;padding: 0 0 10px;line-height:30px;}
+    .srzWrapper .headerTopBanner .headerTopInfo p {padding:0 0 10px;}
+    .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:active:hover, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:hover, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:active:focus, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:focus {padding: 10px 45px 10px 10px;font-size: 16px;line-height:16px;}
+    .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:after {right:10px;}
+}
+
+@media(max-width:1199px){
+    .paymentCostInfo .noofbeds, .paymentCostInfo .costofbeds, .paymentCostInfo .barInner, .paymentCostInfo .novisiters, .paymentCostInfo .costTotal {padding: 0 25px;}
+    .srzWrapper .headerTopBanner {margin: 0 0 25px;}
+	.srzFormBlock ul.group li.dropDownInfo .bootstrap-select.btn-group .dropdown-toggle .filter-option {width:100%;position:relative;}
+    .bootstrap-select.btn-group .dropdown-toggle .filter-option {width:300px;line-height: 28px;}
+    .srzWrapper .headerTopBanner .headerTopInfo h1 {font-size: 22px;line-height: 22px;}
+    .srzWrapper .headerTopBanner .headerTopInfo p{font-size:20px;line-height: 21px;}
+    .srzUnlimitedMagArt .srzMagArtInner h2 {font-size:26px;line-height:30px;}
+    .srzUnlimitedMagArt .srzMagArtInner h2.one1:before {left: -30px;top:-3px;}
+    .srzUnlimitedMagArt .srzMagArtInner h2.one2:before, .srzUnlimitedMagArt .srzMagArtInner h2.one3:before {top:-3px;}
+    .srzUnlimitedMagArt .srzMagArtInner p.srzInstEnable {font-size:18px;line-height:20px;padding: 15px 0 0;}
+    .srzFormBlock ul.group li.lblText {font-size:18px;line-height:20px;}
+    
+    .inputMain {margin: 0 0 10px;}
+    .srzFormBlock ul.group {padding: 0;margin: 0;border-bottom: 0;}
+    .srzFormBlock ul.group li {padding: 0;width: 50% !important;float: left;margin: 5px 0;height: 50px;line-height: 50px !important;}
+    .srzFormBlock ul.group li .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {width:100%}
+    .srzFormBlock ul.group li.dropDownInfo .bootstrap-select > .dropdown-toggle, .srzFormBlock ul.group li.dropDownInfo .bootstrap-select > .dropdown-toggle:focus{font-size:18px;padding:0 10px !important;display: block;border: 1px solid rgba(144,164, 174, 0.2);height: 50px;line-height: 16px;}
+    /*.srzFormBlock .bootstrap-select.btn-group .dropdown-toggle .caret {display:block !important;color: #9a9a9a;}*/
+    
+    .srzFormBlock ul.group li.dropDownInfo input {height:50px;border: 1px solid rgba(144,164, 174, 0.2);box-shadow: none;}
+    .srzFormBlock .bootstrap-select.btn-group .dropdown-menu li {padding: 0; height: auto;margin: 0;width:100% !important;}
+    .srzFormBlock .bootstrap-select.btn-group .dropdown-menu li a {line-height:44px;height: 50px;}
+    
+    .srzFormBlock .bootstrap-select.btn-group .dropdown-menu .bs-searchbox input {border-bottom: 1px solid #ddd !important;border: 0;height: 50px;margin: 0 0 15px;}
+    .srzUnlimitedMagArt .srzMagArtInner a.srzmanyMore {margin:0 0 30px;}
+    .srzUnlimitedMagArt .srzMagArtInner .srzHights .srhHightlightInfo p.hilightTxt, .srzUnlimitedMagArt .srzMagArtInner .srzHights .srhHightlightInfo p.hilightTxt a {font-size:19px;line-height:28px;}
+    
+    /*pickplan*/
+    .srzWrapper .headerTopBanner .PlaningBanner h1 {font-size:35px;line-height:40px;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li {display: inline-block;width:33%;margin: 0 0 45px;}
+    /*.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature ul li {font-size:20px;line-height:20px;width: 100%;}*/
+    /*.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:focus, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:hover, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:active:focus, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:active:hover, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:active {font-size:25px;line-height:41px;max-width: 245px;width: 100%;height: 55px;}*/
+    /*.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature h4 {font-size:26px;line-height:26px;}*/
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo h3 {line-height:24px;font-size:24px;}
+    /*.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.userInfo{line-height:24px;font-size:24px;}*/
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails sup{font-size:50px;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo span.userIcon {margin: 15px 0 20px;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo span.userIcon img {display: inline-block;}
+    /*.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo span.userIcon {height: 80px;width: 80px;line-height: 81px;}*/
+    .plannerPaymentInfoinner {min-height:270px;}
+    /*pickplan*/
+    /*pickplan opt*/
+    .pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li.enterprise .plannerPaymentInfo .planFeature {min-height: 335px;}
+    .pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails {font-size:60px !important;line-height:60px !important;}
+    .pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails.years {font-size:50px !important;line-height:50px !important;}
+    /*pickplan opt*/
+    .srzFormBlock ul.group li.dropDownInfo input {font-size:18px;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature {min-height:225px;}
+    
+    /*login*/
+    .loginWrapper .loginWrapperInner .loginInnerForm form .form-control::-webkit-input-placeholder {line-height:30px;}
+    .loginWrapper .loginWrapperInner .loginInnerForm form .form-control:-ms-input-placeholder{line-height: 30px;}
+    .loginWrapper .loginWrapperInner .loginInnerForm form .form-control:-moz-placeholder {line-height:30px;}
+    /*login*/
+}
+
+@media(max-width:992px){
+    .srzUnlimitedMagArt .srzMagArtInner ul li {width:24%;}
+    /*.srzWrapper .headerTopBanner .headerTopInfo {top: auto;transform: inherit;max-width: 530px;bottom: -140px;box-shadow: inset 0 0 5px #2380f2;}*/
+    .srzUnlimitedMagArt .srzMagArtInner h2 {font-size: 22px;line-height: 26px;}
+    .srzUnlimitedMagArt .srzMagArtInner p.srzInstEnable {font-size: 16px;line-height: 18px;}
+    .srzUnlimitedMagArt .srzMagArtInner .srzHights .srzHightsItems { width: 100%;}
+    .srzWrapper .headerTopBanner .headerTopInfo {padding: 15px;max-width:430px;}
+    .srzWrapper .headerTopBanner .headerTopInfo h1 {font-size: 17px;line-height: 17px;padding: 0 0 5px;}
+    .srzWrapper .headerTopBanner .headerTopInfo p {font-size: 16px;line-height: 18px;}
+    .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:active:hover, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:hover, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:active:focus, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:focus {padding: 5px 45px 3px 10px;font-size: 14px;line-height: 16px;}
+    /*pickplan*/
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.userInfo {line-height:20px;font-size:19px;}
+    .srzChinBusiness .srzChinInner ul.srzChin li {font-size:20px;line-height:24px;}
+    .srzWrapper .headerTopBanner .PlaningBanner h1 {font-size: 28px;line-height: 30px;}
+    .srzWrapper .headerTopBanner .PlaningBanner {max-width:330px;}
+    /*.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature {min-height: 344px;}*/
+    .srzChinBusiness {padding: 10px 0;}
+    /*pickplan*/
+    
+    .srzFormBlock {padding:0 0 30px;}
+    
+    /*login*/
+    .loginWrapper .loginWrapperInner .loginInnerForm {position: absolute;left:50%;bottom: 85px;transform: translateX(-50%);}
+    /*login*/
+    
+    /*pricePlan*/
+    .plannerPaymentInfoinner {min-height:305px;}
+    .paymentCostInfo .noofbeds, .paymentCostInfo .costofbeds, .paymentCostInfo .barInner, .paymentCostInfo .novisiters, .paymentCostInfo .costTotal {width:49%;}
+    .paymentCostInfo .costofbeds:after {display:none;}
+    .paymentCostInfo .noofbeds, .paymentCostInfo .costofbeds {border-bottom: 2px dotted #ddd;padding-bottom: 15px;}
+    /*pricePlan*/
+    
+    /*pricePlan opt*/
+    .pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li.enterprise .plannerPaymentInfo .planFeature {min-height:inherit;}
+    .pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li{width:49%;}
+    /*pricePlan opt*/
+}
+@media(max-width:767px){
+    
+    .srzFormBlock .select2.select2-container .select2-selection {border:1px solid #d6d2d2;}
+    .form-innerNew .select2-container .select2-selection--single {height:40px !important;}
+    .srzFormBlock .select2.select2-container .select2-selection .select2-selection__rendered {font-size:16px;padding-left:10px !important;line-height: 38px !important;}
+    .srzFormBlock .form-innerNew .form-control, .srzFormBlock .form-innerNew .form-control:focus {padding-left: 10px;border: 1px solid #d6d2d2;font-size:16px;    height: 40px;}
+    .select2-container--default .select2-selection--single .select2-selection__arrow {height: 40px !important;}
+    
+    .srzWrapper .headerTopBanner .headerTopInfo {position: relative;top: 10px;transform: inherit;padding: 15px;max-width: 100%;text-align: left;box-shadow: inset 0 0 5px #efeae9;}
+    .srzUnlimitedMagArt .srzMagArtInner {padding: 0;}
+    .srzUnlimitedMagArt .srzMagArtInner .srzHights {padding-top: 0;}
+    .srzUnlimitedMagArt .srzMagArtInner h2.one1:before,
+    .srzUnlimitedMagArt .srzMagArtInner h2.one2:before, .srzUnlimitedMagArt .srzMagArtInner h2.one3:before {display:none;}
+    /*.srzUnlimitedMagArt .srzMagArtInner ul li {width:19%;}*/
+    .srzUnlimitedMagArt .srzMagArtInner ul li a {font-size:14px;line-height:14px;}
+    .srzUnlimitedMagArt .srzMagArtInner h2 {font-size:24px;line-height: 24px;/*padding: 10px 0 10px;*/}
+    .srzUnlimitedMagArt .srzMagArtInner p.srzInstEnable {font-size: 18px;line-height: 18px;}
+    .srzUnlimitedMagArt .srzMagArtInner .srzHights .srhHightlightInfo p.hilightTxt,.srzUnlimitedMagArt .srzMagArtInner .srzHights .srhHightlightInfo p.hilightTxt a {font-size:18px;line-height:24px;}
+    .srzUnlimitedMagArt .srzMagArtInner a.srzmanyMore {margin: 0 0 10px;font-size: 14px;}
+    .srzUnlimitedMagArt .srzMagArtInner .srzHights .srzHightsItems figure {width:100px;}
+    .srzUnlimitedMagArt .srzMagArtInner .srzHights .srzHightsItems:last-child {padding: 0 0 15px;}
+    .srzUnlimitedMagArt .srzMagArtInner ul li a figure{padding:0 0 5px;}
+    .srzFormBlock .inputMain .form-group .form-control {height: 40px;font-size:16px;line-height:20px;margin: 0 0 15px;border-radius: 0;}
+    .srzFormBlock ul.group li.dropDownInfo .bootstrap-select > .dropdown-toggle, .srzFormBlock ul.group li.dropDownInfo input {height:40px;}
+    .srzFormBlock ul.group li {height:40px;line-height:40px !important;font-size:16px !important;}
+    .srzFormBlock ul.group li.dropDownInfo .bootstrap-select > .dropdown-toggle, .srzFormBlock ul.group li.dropDownInfo input {font-size:16px;}
+    .srzFormBlock a.btn-submit, .srzFormBlock a.btn-submit:active:hover, .srzFormBlock a.btn-submit:hover, .srzFormBlock a.btn-submit:active:focus, .srzFormBlock a.btn-submit:focus {padding:10px 35px;;}
+    header {height: 45px;line-height: 45px;text-align: left;}
+    .srzLogin a, .srzLogin a:hover {line-height:45px}
+    
+    /*pickplan*/
+    .srzWrapper .headerTopBanner {margin: 0 0 15px;}
+    .srzWrapper .headerTopBanner .PlaningBanner h1 {font-size: 22px;line-height: 22px;}
+    .pick-planing .planingInner h2 {padding:0 0 10px;font-size: 22px;line-height: 22px;}
+    .pick-planing .planingInner p {font-size:18px;line-height:20px;}
+    .pick-planing .planingInner ul.planChoos {padding: 10px 0;}
+    .pick-planing .planingInner ul.planChoos li {width:140px;}
+    .pick-planing .planingInner ul.planChoos li a {height: 40px;width: 40px;line-height: 40px;}
+    .pick-planing .planingInner ul.planChoos li:after {left:45px;height: 50px;width: 50px;line-height:50px}
+    .pick-planing .planingInner ul.planChoos li a:first-child:before {left: 57px;width: 110px;}
+    .pick-planing .planingInner ul.planChoos li a span {line-height: 40px;font-size: 16px;}
+    .pick-planing .planingInner ul.planChoos li span.planinfo {padding:10px 0 0;font-size:16px;}
+    .pick-planing .planingInner h2:after {display:none;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li {width:49%;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo {padding:40px 15px 15px;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo h3 {line-height: 26px;font-size: 26px;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.userInfo {line-height:24px;font-size:20px;padding: 0 0 15px;}
+/*
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails {line-height:60px !important;font-size:60px !important;}
+*/
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails sup {font-size: 25px;top: -20px;}
+    /*.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails sub {line-height: 20px;font-size: 20px;}*/
+    /*.plannerPaymentInfoinner {min-height:inherit;}*/
+    /*.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature h4 {font-size: 20px;line-height: 21px;}*/
+    /*.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature ul li {font-size: 16px;line-height: 17px;padding: 0 10px 5px;}*/
+    /*.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:focus, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:hover, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:active:focus, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:active:hover, .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo a.buyNowBtn:active {font-size: 18px;line-height: 22px;height: 37px;}*/
+    /*.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature {min-height: 290px;}*/
+    .srzChinBusiness .srzChinInner ul.srzChin li {font-size: 16px;line-height: 19px;}
+    /*pickplan*/
+
+     /*pickplan opt*/
+    .pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails sub {display:block;}
+    .pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.userInfo {line-height: 22px;font-size: 23px;}
+    .pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo h3 {line-height: 26px;font-size: 26px;}
+    /*pickplan opt*/
+    
+    .srzFormBlock .inputMain .form-group .form-control::-webkit-input-placeholder {line-height:27px;}
+    .srzFormBlock .inputMain .form-group .form-control::-moz-placeholder {line-height:27px;}
+    .srzFormBlock .inputMain .form-group .form-control:-ms-input-placeholder  {line-height: 27px;}
+    .srzFormBlock .inputMain .form-group .form-control:-moz-placeholder {line-height:27px;}
+    .srzWrapper .headerTopBanner .headerTopInfo p {font-size:20px;line-height: 24px;}
+    .srzWrapper .headerTopBanner .headerTopInfo h1 {font-size: 22px;line-height: 25px;}
+    .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:active:hover, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:hover, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:active:focus, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:focus {padding: 10px 25px 8px;font-size: 17px;line-height: 17px;}
+    .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:after {display:none;}
+    
+    /*login*/
+    .loginWrapper .loginWrapperInner .loginInnerForm {top: 50%;bottom: auto;transform: translateY(-50%) translateX(-50%);left: 50%;}
+    .loginWrapper header figure {width: 125px;}
+    .loginWrapper .loginWrapperInner .loginInnerForm form h3 {font-size:26px;line-height:28px;}
+    .loginWrapper .loginWrapperInner .loginInnerForm form .form-control {padding: 10px 20px;height: 40px;font-size:16px;line-height:20px;}
+    .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn {margin-bottom:0;}
+     .loginWrapper header figure {padding-top: 15px;}
+    .loginWrapper header {height: inherit;}
+    .loginWrapper .loginWrapperInner .loginInnerForm form h3 {font-size: 20px;line-height: 20px;}
+    
+    
+    .loginWrapper .loginWrapperInner .loginInnerForm form span.dashboard{padding:5px 0;}
+    
+    .loginWrapper .loginWrapperInner .loginInnerForm form .form-control::-webkit-input-placeholder {line-height:27px;}
+    .loginWrapper .loginWrapperInner .loginInnerForm form .form-control::-moz-placeholder {line-height:27px;}
+    .loginWrapper .loginWrapperInner .loginInnerForm form .form-control:-ms-input-placeholder{line-height: 27px;}
+    .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn {line-height:26px;}
+    .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn {line-height: 26px;}
+    /*login*/
+    
+    
+    /*Payment*/
+    .srzpaymentGateWay .srzpaymentInner {padding: 15px 0 0;}
+    .srzpaymentGateWay .srzpaymentInner ul li:nth-child(2) {width: 100%;}
+    .srzpaymentGateWay .srzpaymentInner ul li {display: block;width: 100%;}
+    .srzpaymentGateWay .srzpaymentInner ul li .example.example1 fieldset {margin: 0 0 5px;}
+    .srzpaymentGateWay .srzpaymentInner ul li .example.example1 button {padding:0;width:100%;margin: 0 0 5px;}
+    .srzpaymentGateWay .srzpaymentInner ul li:nth-child(2):before {background: #339ce5;height: 1px;width: 100%;top: 17px;}
+    .srzSubsriptions {padding:15px 0;}
+    /*Payment*/
+}
+@media(max-width:639px){
+    
+    /*planing*/
+    .pick-planing .plannerInnerPayment ul.paymentChoos li {width:49%;}
+    /*planing*/
+    
+    /*planing opt*/
+    .pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li {width: 100%;}
+    .pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.paymentDetails.years {font-size: 65px !important;line-height: 65px !important;}
+    /*planing opt*/
+    
+    .srzWrapper .headerTopBanner .headerTopInfo {left: 0;max-width: 100%;padding: 15px;border: 0;margin-bottom:15px;}
+    .srzWrapper .headerTopBanner .headerTopInfo h1 {font-size: 20px;line-height:25px;padding: 0 0 10px;}
+    .srzWrapper .headerTopBanner .headerTopInfo p {font-size: 17px;line-height:22px !important;}
+    .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:active:hover, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:hover, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:active:focus, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:focus {font-size: 14px;line-height: 14px;padding-bottom: 8px;}
+    
+    .srzUnlimitedMagArt .srzMagArtInner ul li {width:32%;}
+    .srzUnlimitedMagArt .srzMagArtInner .srzHights .srhHightlightInfo p.hilightTxt, 
+    .srzUnlimitedMagArt .srzMagArtInner .srzHights .srhHightlightInfo p.hilightTxt a {font-size: 18px;line-height: 24px;border:0;}
+    .srzUnlimitedMagArt .srzMagArtInner h2 {font-size:20px;line-height: 22px;padding: 10px 0 0;}
+    .srzUnlimitedMagArt .srzMagArtInner p.srzInstEnable {font-size: 17px;line-height: 20px;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos {padding: 20px 0 0;margin: 0;}
+    /*.pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature {min-height: 250px;}*/
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.userInfo {line-height: 21px;font-size:21px;padding: 0 0 10px;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo span.userIcon {margin: 10px 0;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature ul li {padding:0 0 0 10px;font-size:15px;}
+    .srzChinBusiness .srzChinInner ul.srzChin li {display: block;text-align: center;padding: 0 0 10px;}
+    .plannerPaymentInfoinner {min-height: 210px;}
+    .srzWrapper .headerTopBanner .PlaningBanner h1 {font-size: 18px;line-height: 20px;max-width: 200px;}
+    .srzChinBusiness .srzChinInner ul.srzChin li a.contactUsBtn, .srzChinBusiness .srzChinInner ul.srzChin li a.contactUsBtn:focus, .srzChinBusiness .srzChinInner ul.srzChin li a.contactUsBtn:hover, .srzChinBusiness .srzChinInner ul.srzChin li a.contactUsBtn:active:focus, .srzChinBusiness .srzChinInner ul.srzChin li a.contactUsBtn:active:hover, .srzChinBusiness .srzChinInner ul.srzChin li a.contactUsBtn:active {font-size:16px;line-height:17px;}
+    
+   
+    
+    .loginWrapper .loginWrapperInner .loginInnerForm form span.dashboard {color: #fff;font-size: 14px;padding: 5px 0;line-height: 14px;}
+    .loginWrapper .loginWrapperInner .loginInnerForm form .form-control {padding: 5px 10px;font-size: 16px;line-height: 20px;height: 36px;}
+    /*.loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn, 
+    .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn {margin-right: 0;margin-bottom: 0;max-width:100%;}*/
+    /*.loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn {margin:15px 0 0;}*/
+    
+
+    
+    
+    /*priceplan*/
+    .srz-plans-tabinner .nav {margin: 10px 0;}
+    .srz-plans-tabinner .nav li {margin: 0 0 10px;}
+    .paymentCostInfo .noofbeds, .paymentCostInfo .costofbeds, .paymentCostInfo .barInner, .paymentCostInfo .novisiters, .paymentCostInfo .costTotal {width: 100%;border-bottom:0;padding-bottom: 15px;}
+     .paymentCostInfo p {padding: 10px 0;margin: 0 0 10px;line-height:20px;font-size:18px;}
+     .paymentCostInfo span{line-height:20px;font-size:18px;}
+    .paymentCostInfo .form-control {height:30px;}
+    .estimatedBlock .estimatedBlockInner table tr td.GetStarted a.btnGetStarted {line-height:20px;font-size:18px;}
+    /*priceplan*/
+}
+@media(max-width:479px){
+    .loginWrapper footer .footerInner ul {text-align:center;}
+    .loginWrapper footer .footerInner ul li:first-child {float: none;}
+    .loginWrapper footer .footerInner ul li:last-child {float: none;padding-top: 10px;}
+    .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn, 
+    .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn {margin-right: 0;margin-bottom: 0;max-width:100%;}
+    .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn {margin:15px 0 0;}
+    .srzUnlimitedMagArt .srzMagArtInner h2 {font-size:20px;}
+    .srzWrapper .headerTopBanner .headerTopInfo h1 {line-height: 18px;}
+    .srzWrapper .headerTopBanner .headerTopInfo p{line-height: 19px;}
+    .srzUnlimitedMagArt .srzMagArtInner ul li {width:49%;}
+    .srzUnlimitedMagArt .srzMagArtInner h2 {padding: 10px 0 15px;}
+    .srzUnlimitedMagArt .srzMagArtInner .srzHights .srzHightsItems figure {text-align: center;width: 100%;display: block;}
+    .srzUnlimitedMagArt .srzMagArtInner .srzHights .srzHightsItems figure img{display:inline-block;width: 85px;}
+    .srzUnlimitedMagArt .srzMagArtInner .srzHights .srhHightlightInfo {text-align: center;display: block;}
+    .srzUnlimitedMagArt .srzMagArtInner .srzHights .srzHightsItems {padding:0 0 10px;}
+    .srzFormBlock ul.group li {height: auto;line-height: 16px !important;float: left;width: 100% !important;padding: 0;}
+    .srzFormBlock ul.group li.lblText {margin: 10px 0 0;}
+    .srzWrapper .headerTopBanner .headerTopInfo h1 {font-size: 22px;line-height: 25px;}
+    .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:active:hover, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:hover, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:active:focus, .srzWrapper .headerTopBanner .headerTopInfo a.btn-knowmore:focus {width:100%;}
+    .srzUnlimitedMagArt.highlights {padding:15px 0 0;margin: 0 0 15px;}
+    /*pickplan*/
+    .pick-planing .plannerInnerPayment ul.paymentChoos li span.recomended {left:-5px}
+    .srzWrapper .headerTopBanner .PlaningBanner {max-width: 200px;}
+    .srzWrapper .headerTopBanner .PlaningBanner h1 {font-size: 14px;line-height: 16px;}
+    .pick-planing .planingInner ul.planChoos li {width: 100px;}
+    .pick-planing .planingInner ul.planChoos li:after {left:25px;}
+    .pick-planing .planingInner ul.planChoos li a:first-child:before {width: 70px;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.userInfo {font-size:18px;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li {width: 100%;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo .planFeature {min-height: inherit;}
+    .plannerPaymentInfoinner {min-height: inherit;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo {margin:0}
+    /*pickplan*/
+    
+    /*pickplan opt*/
+    .pick-planing.opt1 .plannerInnerPayment ul.paymentChoos li .plannerPaymentInfo p.userInfo {line-height: 22px;font-size:18px;}
+    /*pickplan opt*/
+    
+    
+    /*login*/
+    /*.loginWrapper .loginWrapperInner .loginInnerForm {top: auto;transform: inherit;bottom: 70px;right: auto;float: none;display: inline-block;left: 15px;}*/
+ /*   .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default, .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn:active:hover, .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn.active:hover, .open > .dropdown-toggle.loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn:hover, .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn:active:focus, .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn.active:focus, .open > .dropdown-toggle.loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn:focus, .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn:active.focus, .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn.active.focus, .open > .dropdown-toggle.loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.forgot-password-btn:focus {width: 100%;padding: 0;margin: 0;max-width: 100%;line-height: 40px;}
+    
+    .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn, .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn:active:hover, .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn.active:hover, .open > .dropdown-toggle.loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn:hover, .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn:active:focus, .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn.active:focus, .open > .dropdown-toggle.loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn:focus, .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn:active.focus, .loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn.active.focus, .open > .dropdown-toggle.loginWrapper .loginWrapperInner .loginInnerForm form .btn-default.login-btn:focus {margin-bottom:15px;line-height: 40px;}*/
+    /*login*/
+    
+    
+}
+
+
+
+/*FAQ Modal*/
+#FaqModal .modal-open .modal{padding:0 !important}
+#FaqModal .modal-dialog{width:865px;}
+#FaqModal .modal-content{border-radius:0;border: 0;}
+#FaqModal .modal-body{padding:0;display:table;width:100%;background:#0072bc;}
+#FaqModal .modal-body .faq-lft{display: table-cell;vertical-align:top;background:#0072bc  url('../images/faqbannerbg.png') no-repeat center center;width:362px;padding:35px 30px 0;}
+#FaqModal .modal-body .faq-lft p{margin: 0;color: #fff;font: 33px/35px 'hindlight';text-align: center;}
+#FaqModal .modal-body .faq-lft p b{display: block;font-family: 'hindsemibold';padding-top:5px;}
+#FaqModal .modal-body .faq-right{display: table-cell;vertical-align:top;padding:35px 30px 0;background:#fff}
+#FaqModal .modal-body .faq-right h2{padding: 0 0 15px;margin: 0;font: 18px/22px 'hindsemibold';}
+#FaqModal .modal-body .faq-right p{margin: 0;font: 18px/22px 'hindregular';padding:0 0 20px;}
+#FaqModal button.close {position: absolute;right: 20px;top: 20px;opacity:1;outline:none;}
+
+@media(max-width:1199px){
+ #FaqModal .modal-body .faq-lft p {font-size:28px;line-height:28px;}
+ .srz-plans-tabinner .nav {margin: 15px 0 25px;}
+}
+@media(max-width:992px){
+#FaqModal .modal-dialog{width:95%;margin: 20px auto;display: table;} 
+#FaqModal .modal-body .faq-lft {display: inline-block;vertical-align: middle;background-position: center 85%;width: 100%;padding: 35px 30px;height: 330px;background-size: auto 50%;}
+#FaqModal .modal-body .faq-right {display:inline-block;}
+    .pick-planing .plannerInnerPayment ul.paymentChoos li {width:49%;}
+}
+@media(max-width:767px){
+#FaqModal .modal-body .faq-lft {padding: 15px;height: 200px;}
+#FaqModal .modal-body .faq-lft p{font-size:24px;line-height:30px;}
+#FaqModal .modal-body .faq-lft p b{padding:0;}
+#FaqModal .modal-body .faq-right {display:inline-block;padding: 20px 15px 0;}
+#FaqModal .modal-body .faq-right h2{font-size:16px;padding: 0 0 10px;line-height:18px;}
+#FaqModal .modal-body .faq-right p{font-size:16px;line-height:20px;padding:0 0 10px;}
+}
+@media(max-width:479px){
+    .pick-planing .plannerInnerPayment ul.paymentChoos li {width:100%;}
+}
+/*FAQ Modal*/
+
+/*Publisher Plan*/
+.srzWrapper.publisherBanner .headerTopBanner {background-color: #3b4557;position:relative;margin:0;}
+.srzWrapper.publisherBanner .headerTopBanner figure img{width:100%;}
+.srzWrapper.publisherBanner .headerTopBanner .publisherPlanBannerText{position: absolute;text-align: center;left: 50%;top: 50px;transform: translateX(-50%);}
+.srzWrapper.publisherBanner .headerTopBanner .publisherPlanBannerText h2{color: #fff;font: 50px/50px 'hindmedium';margin: .0;padding: 0;}
+
+.publisherPlansInfo ul.pubPlan{margin: 0;padding: 0;list-style: none;display:inline-block;width: 100%;text-align: center;position: relative;top: -175px;}
+.publisherPlansInfo ul.pubPlan h3{color: #fff;text-align: left;margin: 0;padding: 0 0 20px 85px;font: 24px/24px 'hindlight';position: relative;}
+.publisherPlansInfo ul.pubPlan h3:after{content:'';}
+.publisherPlansInfo ul.pubPlan li{background: #fff;display: inline-block;vertical-align: top;padding: 15px;margin:0 15px 20px;-webkit-box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.16);-moz-box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.16);box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.16);text-align: center;}
+.publisherPlansInfo ul.pubPlan li ul{margin: 0;padding: 0;list-style: none;display:block;}
+.publisherPlansInfo ul.pubPlan li ul li{display:block;padding:5px 0;}
+
+.plannerpublisherInfo .plannerpublisherInfoinner{border-bottom:1px solid #6d6d6d;padding:0 0 15px;}
+.plannerpublisherInfo .plannerpublisherInfoinner .userIcon{display:block;min-height: 80px;line-height: 80px;}
+.plannerpublisherInfo .plannerpublisherInfoinner .userIcon img{display:inline-block}
+.plannerpublisherInfo .plannerpublisherInfoinner h3{padding:10px 0;margin:0;font:28px/28px 'hindregular';color:#5b5b5b;}
+.plannerpublisherInfo .plannerpublisherInfoinner .publisherDetails{padding:0;margin:0;font:20px/24px 'hindregular';color:#6d6d6d;}
+.plannerpublisherInfo .planFeature {text-align:left;padding: 15px 0;}
+.plannerpublisherInfo .planFeature h4{color: #bdbdbd;padding: 0 0 10px;margin: 0;font:18px/18px 'hindlight';text-transform: uppercase;letter-spacing:4px;text-align: center;}
+.plannerpublisherInfo .planFeature h5{text-align: center;padding: 5px 0 10px;margin: 0;font: 18px/18px 'hindbold';letter-spacing: 3px;}
+li.standard .plannerpublisherInfo .planFeature h5{color: #ffa800;}
+li.standard i.fa-plane{color: #ffa800;font-size:75px;vertical-align: middle;}
+li.premium .plannerpublisherInfo .planFeature h5{color: #ec4863;}
+.plannerpublisherInfo .planFeature p{margin:0;font: 16px/16px 'hindlight';color:#5f5f5f;padding:8px 0 8px 15px;position:relative;}
+.plannerpublisherInfo .planFeature p:before{content:'';position:absolute;left:0;top:14px;height:5px;width:5px;background:#31b1d2;border-radius:50%;}
+
+li.standard .plannerpublisherInfo .planFeature p:before {background:#ffa800}
+li.premium .plannerpublisherInfo .planFeature p:before {background:#ec4863}
+
+.plannerpublisherInfo a.buyNowBtn, .plannerpublisherInfo a.buyNowBtn:focus, .plannerpublisherInfo a.buyNowBtn:hover, .plannerpublisherInfo a.buyNowBtn:active:focus, .plannerpublisherInfo a.buyNowBtn:active:hover, .plannerpublisherInfo a.buyNowBtn:active {background-color: #31b1d2;border-color: #31b1d2;width:100%;}
+
+li.standard .plannerpublisherInfo a.buyNowBtn, li.standard .plannerpublisherInfo a.buyNowBtn:focus, li.standard .plannerpublisherInfo a.buyNowBtn:hover, li.standard .plannerpublisherInfo a.buyNowBtn:active:focus, li.standard .plannerpublisherInfo a.buyNowBtn:active:hover, li.standard .plannerpublisherInfo a.buyNowBtn:active {background-color: #ffa800;border-color: #ffa800;width:100%;}
+
+li.premium .plannerpublisherInfo a.buyNowBtn, li.premium .plannerpublisherInfo a.buyNowBtn:focus, li.premium .plannerpublisherInfo a.buyNowBtn:hover, li.premium .plannerpublisherInfo a.buyNowBtn:active:focus, li.premium .plannerpublisherInfo a.buyNowBtn:active:hover, 
+li.premium .plannerpublisherInfo a.buyNowBtn:active {background-color: #ec4863;border-color: #ec4863;width:100%;}
+
+/*FAQ Modal*/
+#FaqModal .modal-open .modal{padding:0 !important}
+#FaqModal .modal-dialog{width:865px;}
+#FaqModal .modal-content{border-radius:0;border: 0;}
+#FaqModal .modal-body{padding:0;display:table;width:100%;background:#0072bc;}
+#FaqModal .modal-body .faq-lft{display: table-cell;vertical-align:top;background:#0072bc  url('../images/faqbannerbg.png') no-repeat center center;width:362px;padding:35px 30px 0;}
+#FaqModal .modal-body .faq-lft p{margin: 0;color: #fff;font: 33px/35px 'hindlight';text-align: center;}
+#FaqModal .modal-body .faq-lft p b{display: block;font-family: 'hindsemibold';padding-top:5px;}
+#FaqModal .modal-body .faq-right{display: table-cell;vertical-align:top;padding:35px 30px 0;background:#fff}
+#FaqModal .modal-body .faq-right h2{padding: 0 0 15px;margin: 0;font: 18px/22px 'hindsemibold';}
+#FaqModal .modal-body .faq-right p{margin: 0;font: 18px/22px 'hindregular';padding:0 0 20px;}
+#FaqModal .modal-body .faq-right p a, #FaqModal .modal-body .faq-right p a:hover{margin: 0;font: 18px/22px 'hindregular';padding:0 0 20px;color:#2380f2;text-decoration:none;}
+#FaqModal button.close {position: absolute;right: 20px;top: 20px;opacity:1;outline:none;}
+
+@media(max-width:1199px){
+    #FaqModal .modal-body .faq-lft p {font-size:28px;line-height:28px;}
+}
+@media(max-width:992px){
+#FaqModal .modal-dialog{width:95%;margin: 20px auto;display: table;} 
+#FaqModal .modal-body .faq-lft {display: inline-block;vertical-align: middle;background-position: center 85%;width: 100%;padding: 35px 30px;height: 330px;background-size: auto 50%;}
+#FaqModal .modal-body .faq-right {display:inline-block;}
+}
+@media(max-width:767px){
+#FaqModal .modal-body .faq-lft {padding: 15px;height: 200px;}
+#FaqModal .modal-body .faq-lft p{font-size:24px;line-height:30px;}
+#FaqModal .modal-body .faq-lft p b{padding:0;}
+#FaqModal .modal-body .faq-right {display:inline-block;padding: 20px 15px 0;}
+#FaqModal .modal-body .faq-right h2{font-size:16px;padding: 0 0 10px;line-height:18px;}
+#FaqModal .modal-body .faq-right p{font-size:16px;line-height:20px;padding:0 0 10px;}
+}
+/*FAQ Modal*/
+ .planList{
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            cursor: default;
+        }
+
+        .planList.active{
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);            
+        }
+
+        .planList.recom{            
+            transform: scale(1.05);
+        }
+span.closeIcon{width: 30px;height: 30px;background: #ddd;display: block;text-align: center;font: 16px/32px 'hindregular';color: #5b5b5b;position: absolute;right: 25px;top: -30px;cursor: pointer;border-top-left-radius: 50%;border-top-right-radius: 50%;-webkit-border-top-left-radius: 50%;-webkit-border-top-right-radius: 50%;-o-border-top-left-radius: 50%;-o-border-top-right-radius: 50%;}
+
+.recomendedFixed {margin: 25px 10px 20px;/*position: fixed;bottom: 0;left: 0;right: 0;*/-webkit-box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.16); -moz-box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.16);background:#fff;box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.16);padding: 15px 0;}
+.recomendedFixed p.userInfo{margin: 0;font: 16px/16px 'hindregular';padding:0;}
+.recomendedFixed span.userIcon{margin:15px 0;display:block;}
+.recomendedFixed p.priceinfo{padding:10px 0 0;}
+.recomendedFixed  .plannerPaymentInfo h3 {padding:15px 0 10px;margin: 0;font: 24px/24px 'hindsemiBold';color: #5b5b5b;}
+.recomendedFixed .recomInner{display: table;width: 100%;text-align: center;padding:0 15px;}    
+.recomendedFixed .recomInner .plannerPaymentInfo {display: table;width: 100%;} 
+.recomendedFixed .recomInner .plannerPaymentInfo .plannerPaymentInfoinner{display: table-cell;position:relative;vertical-align: middle;} 
+
+.recomendedFixed .recomInner .plannerPaymentInfo .plannerPaymentInfoinner .userIcon{text-align: center;display: table-cell;vertical-align: middle;}
+.recomendedFixed .recomInner .plannerPaymentInfo .plannerPaymentInfoinner div{text-align:left;padding-left: 15px; display: table-cell;vertical-align: middle;width: 400px;}
+.recomendedFixed .recomInner .plannerPaymentInfo .plannerPaymentInfoinner .userIcon img{display: inline-block;}
+.recomendedFixed .recomInner .planFeature{display:table-cell;vertical-align:middle;padding: 0 15px;}
+.recomendedFixed .recomInner .planFeature ul{text-align: left;}
+.recomendedFixed .recomInner .contactBtnBlock{display:table-cell;vertical-align:middle}
+
+.recomendedFixed span.recomended{position: absolute;top:-10px;color: #fff;text-transform: uppercase;padding: 5px 30px;font: 12px/12px 'hindbold';left:-20px;}
+.recomendedFixed span.recomended:after{content:'';position:absolute;border: 10px solid transparent;border-right: 10px solid #fff;right:0;top:0;}
+
+.recomendedFixed span.recomended:before{content: '';position: absolute;border: 5px solid transparent;left: -5px;top: 16px;}
+
+.recomendedFixed.startup  span.recomended{background:#8987cd;}
+.recomendedFixed.basic  span.recomended{background:#f4ad00;}
+.recomendedFixed.basic-pro  span.recomended{background:#31b1d2;}
+.recomendedFixed.growing-team  span.recomended{background:#ef6e9f;}
+.recomendedFixed.enterprise  span.recomended{background:#52b87e;}
+.recomendedFixed.personal  span.recomended{background:#FF733E;}
+
+.recomendedFixed.startup  span.recomended:before{border-right: 5px solid  #8987cd;}
+.recomendedFixed.basic  span.recomended:before{border-right: 5px solid  #f4ad00;}
+.recomendedFixed.basic-pro  span.recomended:before{border-right: 5px solid  #31b1d2;}
+.recomendedFixed.growing-team  span.recomended:before{border-right: 5px solid  #ef6e9f;}
+.recomendedFixed.enterprise  span.recomended:before{border-right: 5px solid  #52b87e;}
+.recomendedFixed.personal  span.recomended:before{border-right: 5px solid  #FF733E;}
+
+.recomendedFixed .planFeature h4{text-align:left;padding: 0 0 5px;margin: 0;font:18px/18px 'hindmedium';color: #3b3b3b;}
+.recomendedFixed .planFeature ul{margin:0;padding:0;list-style:circle}
+.recomendedFixed .planFeature ul li{display:block;margin: 0 0 5px;padding:0 10px 0;font: 15px/17px 'hindregular';color: #8c8c8c;position:relative;width:100%;}
+
+.recomendedFixed .planFeature ul li:before{content:'';height:5px;width:5px;position:absolute;left:0;top:4px;border-radius: 50%;}
+
+.recomendedFixed .contactBtnBlock a.buyNowBtn, .recomendedFixed .contactBtnBlock a.buyNowBtn:focus, .recomendedFixed .contactBtnBlock a.buyNowBtn:hover, .recomendedFixed .contactBtnBlock a.buyNowBtn:active:focus, .recomendedFixed .contactBtnBlock a.buyNowBtn:active:hover, .recomendedFixed .contactBtnBlock a.buyNowBtn:active{font: 15px/22px 'hindmedium';margin:0;max-width: 180px;width: 100%;height: 35px;}
+
+.recomendedFixed p.paymentDetails {margin: 0;font:26px/26px 'hindsemiBold';padding:10px 0 0;}
+.recomendedFixed p.paymentDetails sub{font: 16px/16px 'hindregular';display:inline-block !important;bottom:0;right:-5px;}
+.recomendedFixed p.paymentDetails sub {font: 16px/16px 'hindregular'; color: #8c8c8c; display: block; }
+
+
+.menu-topmenu-container ul {list-style:none;margin:0;padding:0;}
+.menu-topmenu-container ul li{display:inline-block;margin:0 15px;}
+.menu-topmenu-container ul li a{text-decoration:none;text-transform:uppercase;}

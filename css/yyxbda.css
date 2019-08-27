@@ -1,0 +1,36 @@
+
+
+code {
+  background-color: #f1f2f3;
+}
+
+.card {
+  transition: background .2s;
+  background: #f1ecec;
+  border: 0;
+}
+
+.card:hover {
+  background: rgb(234, 229, 229);
+}
+
+.card-body {
+  cursor: pointer;
+}
+
+.imglist {
+  font-size: 0;
+}
+
+.imglist a {
+  display: inline-block;
+  margin: 10px 10px 0 0; 
+}
+
+.imglist a:last-of-type {
+  margin-right: 0; 
+}
+
+.imglist a img {
+  vertical-align: top;
+}
