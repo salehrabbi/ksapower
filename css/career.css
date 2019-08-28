@@ -14,3 +14,22 @@
   text-align: left;
   font-size: 18px;
 }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.ser-content {
+  padding: 15px 0;
+}
+.ser-content p {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 5px;
+}

@@ -17,3 +17,17 @@ $f: 'Freight';
         font-size: 18px;
     }
 }
+
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ser-content{
+    padding: 15px 0;
+    p{
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+}
