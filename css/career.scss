@@ -19,44 +19,4 @@ $f: 'Freight';
     }
 }
 
-.flex {
-    display: flex;
-    flex-flow: row wrap;
-}
 
-.ser-content {
-    padding: 15px 0;
-
-    p {
-        font-size: 14px;
-        font-weight: 700;
-        margin-top: 5px;
-    }
-}
-
-
-.areasofoperation p.operation > a {
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    color: #b0b0b0;
-    padding: 10px;
-    display: inline-block;
-    text-decoration: none;
-    position: relative;
-    font: 14px/16px 'robotomedium';
-    text-align: center;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border: 1px solid #b0b0b0;
-
-    &:hover {
-        background: #a6cf39;
-        color: #fff;
-        border-color: #a6cf39;
-    }
-    &:before{
-        display: none;
-    }
-}
