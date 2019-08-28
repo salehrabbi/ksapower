@@ -13,10 +13,20 @@ $f: 'Freight';
         font-family: $f !important;
     }
 
-    p.careerInfo {
+    p.careerInfo,
+    p {
         text-align: left;
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
 
+
+.ContactUsForm form input.form-control {
+    height: 40px;
+    padding: 0 20px;
+}
+
+.ContactUsForm form span.focus-border {
+    padding: 0;
+}

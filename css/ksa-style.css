@@ -4678,10 +4678,9 @@ ul.experience .checkbox input[type="checkbox"]:checked + label {
 }
 
 
-.table tr:hover,
+.table tbody tr:hover,
 .table tbody tr:nth-child(2n):hover {
     background: #0a4b7f !important;
-    color: #fff;
 
 }
 
