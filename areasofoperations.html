@@ -1,160 +1,161 @@
 <!DOCTYPE html>
 <html lang="en" class="demo-1 no-js">
+
 <head>
-<meta charset="utf-8">
-<title>KSA</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/ksa-style.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/slick.css">
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css'>
-<!--[if lt IE 9]>
+    <meta charset="utf-8">
+    <title>KSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ksa-style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css'>
+    <!--[if lt IE 9]>
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	<script src="js/html5.js"></script>
 <![endif]-->
-<script language="javascript" type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
-<script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>
-<script language="javascript" type="text/javascript" src="js/slick.js"></script>
-<script language="javascript" type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript">
-if (document.layers) {
-    //Capture the MouseDown event.
-    document.captureEvents(Event.MOUSEDOWN);
- 
-    //Disable the OnMouseDown event handler.
-    document.onmousedown = function () {
-        return false;
-    };
-}
-else {
-    //Disable the OnMouseUp event handler.
-    document.onmouseup = function (e) {
-        if (e != null && e.type == "mouseup") {
-            //Check the Mouse Button which is clicked.
-            if (e.which == 2 || e.which == 3) {
-                //If the Button is middle or right then disable.
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>
+    <script language="javascript" type="text/javascript" src="js/slick.js"></script>
+    <script language="javascript" type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+        if (document.layers) {
+            //Capture the MouseDown event.
+            document.captureEvents(Event.MOUSEDOWN);
+
+            //Disable the OnMouseDown event handler.
+            document.onmousedown = function() {
                 return false;
-            }
+            };
+        } else {
+            //Disable the OnMouseUp event handler.
+            document.onmouseup = function(e) {
+                if (e != null && e.type == "mouseup") {
+                    //Check the Mouse Button which is clicked.
+                    if (e.which == 2 || e.which == 3) {
+                        //If the Button is middle or right then disable.
+                        return false;
+                    }
+                }
+            };
         }
-    };
-}
- 
-//Disable the Context Menu event.
-document.oncontextmenu = function () {
-    return false;
-};
-</script>
+
+        //Disable the Context Menu event.
+        document.oncontextmenu = function() {
+            return false;
+        };
+
+    </script>
 </head>
 
 <body>
-  <div id="preloader"><img src="images/balls.svg" width="90" alt=""> </div>
-  <!-- Overall Wrapper Starts -->
-  <section class="wrapper">
-  <!-- Header Section Starts -->
-  <header>
-  <section class="container-fluid">
-  <section class="ksa-logo">
-  <figure>
-    <a href="javascript:;"><img src="images/ksa-logo.png" class="img-responsive"></a>
-  </figure>
-  </section>
-    <section class="mainnav-trigger visible-xs visible-sm">
-    <span>&nbsp;</span>
-    <span>&nbsp;</span>
-    <span>&nbsp;</span>
-  </section>
-  <nav>
-  <ul>
-    <li><a href="index.html" id="s1" alt="Home" title="Home">Home</a></li>
-    <li><a href="aboutus.html" id="s2" alt="About Us" title="About Us">About Us</a></li>
-    <li><a href="javascript:;" class="active" id="s3" alt="Areas of Operations" title="Areas of Operations">Areas of Operations</a></li>
-    <li><a href="portfolio.html" id="s1" alt="Projects Portfolio" title="Projects Portfolio">Projects Portfolio</a></li>
-    <li><a href="gallery.html" id="s1" alt="Gallery" title="Gallery">Gallery</a></li>
-    <li><a href="contactus.html" id="s5" alt="Contact Us" title="Contact Us">Contact Us</a></li>
-    <li><a href="careers.html" id="s1" alt="Careers" title="Careers">Careers</a></li>
-  </ul>
-  </nav>
-  </section>
-  </header>
-  <section class="clearfix"></section>
-  <!-- Header Section Ends -->
-  
-  <!-- Banner Slider Section Starts -->
-  <section class="ksa-banners" id="banners">
-	  <section class="ksa-bannerslider">
-      <section class="ksa-bannersliderInner">
-        <figure>
-        <img src="images/areasopt.jpg" class="img-responsive">
-        </figure>
-      </section>
-    </section>
-  </section>
-  <!-- Banner Slider Section Ends -->
-  <!-- AREAS OF OPERATION Section Starts -->
-  <section id="areasofoperation">
-  	<section class="areasofoperation inner">
-		  <section class="container">
-			  <aside class="headAbout">
-			    <hr>
-			    <h3 class="aboutusHead pd">AREAS OF OPERATION</h3>
-			  </aside>
-			  <!--<p class="turnkeySol">Turnkey Solution</p>-->
-				<span style="font-size: 16px;">We undertake turnkey projects including Civil, Electrical, Control & Automation and Instrumentation works 
-			  related to<br>Power evacuation Substations / Switchyards and Transmission Lines upto 400 kV.</span></p>
-			  <section class="operationClacified">
-			  	<!--<p class="opeClacified"> Our areas of operation is further classified as follows</p>-->
-          <section class="areasofOptTabs">
-          <section class="port-abt">
-          <section class="port-abt-tab">
-            <section class="port-abt-tabinner">
-              <ul class="nav clearfix">
-                <li rel="Tab01"><a href="javascript:;">Non-Conventional Energy Sector</a></li>
-                <li rel="Tab02"><a href="javascript:;">Conventional Energy Sector</a></li>
-                <li rel="Tab03"><a href="javascript:;">Railway Electrification</a></li>
-                <li rel="Tab04"><a href="javascript:;">Industrial Electrification</a></li>
-                <li rel="Tab05"><a href="javascript:;">Manufacturing and Supply of BIO-COAL</a></li>
-              </ul>
-              <section class="tab-content">
-                <section class="port-abt-tabtrigger" rel="Tab01">Non-Conventional Energy Sector</section>
-                <aside id="Tab01" class="tab-pane">
-                  <section class="tab-pane-inner">
-                    <section class="port1-abt">
-                      <section class="port1-abt-tab">
-                        <section class="port1-abt-tabinner">
-                          <ul class="nav1 clearfix">
-                            <li rel="Tab011"><a href="javascript:;">Wind Power Projects</a></li>
-                            <li rel="Tab021"><a href="javascript:;">Solar Power Projects</a></li>
-                            <!--<li rel="Tab033"><a href="javascript:;">Terminal Bay Extention</a></li>-->
-                          </ul>
-                          <section class="tab-content1">
-                            <!--<section class="port-abt-tabtrigger active" rel="Tab01"><span>Non-Conventional Energy Sector</span><aside class="rgticon">&nbsp;</aside></section>-->
-                            <aside id="Tab011" class="tab-pane1">
-                              <section class="tab-pane-inner1">
-                                <p class="operation">
-                                  <a href="javascript:;" data-toggle="modal" data-target="#UnitSubstations">Unit Substation </a>
-                                  <a href="javascript:;" data-toggle="modal" data-target="#InternalOH">33kV Internal OH Lines</a>
-                                  <a href="javascript:;" data-toggle="modal" data-target="#EHVPooling1">EHV Pooling / Switching Substations</a>
-                                  <a href="javascript:;" data-toggle="modal" data-target="#EHVTransmission" >EHV Transmission Lines</a>
-                                  <a href="javascript:;" data-toggle="modal" data-target="#TerminalBay">Terminal Bay Extention </a>
-                                </p>
-                              </section>
-                            </aside>
-                            <!--<section class="port-abt-tabtrigger" rel="Tab02"><span>Conventional Energy Sector Central / State Utility Boards</span></section>-->
-                            <aside id="Tab021" class="tab-pane1">
-                              <section class="tab-pane-inner1">
-                                <p class="operation">
-                                  <a href="javascript:;" data-toggle="modal" data-target="#EHVPoolingSubstation">EHV Pooling Substation </a>
-                                  <a href="javascript:;" data-toggle="modal" data-target="#EHVTransmissionLines">EHV Transmission Lines </a>
-                                  <a href="javascript:;" data-toggle="modal" data-target="#terminalExtention">Terminal Bay Extention</a>
-                                </p>
-                              </section>
-                            </aside>
-                              <!--<aside id="Tab033" class="tab-pane1">
+    <div id="preloader"><img src="images/balls.svg" width="90" alt=""> </div>
+    <!-- Overall Wrapper Starts -->
+    <section class="wrapper">
+        <!-- Header Section Starts -->
+        <header>
+            <section class="container-fluid">
+                <section class="ksa-logo">
+                    <figure>
+                        <a href="javascript:;"><img src="images/ksa-logo.png" class="img-responsive"></a>
+                    </figure>
+                </section>
+                <section class="mainnav-trigger visible-xs visible-sm">
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                </section>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="s1" alt="Home" title="Home">Home</a></li>
+                        <li><a href="aboutus.html" id="s2" alt="About Us" title="About Us">About Us</a></li>
+                        <li><a href="javascript:;" class="active" id="s3" alt="Areas of Operations" title="Areas of Operations">Areas of Operations</a></li>
+                        <li><a href="portfolio.html" id="s1" alt="Projects Portfolio" title="Projects Portfolio">Projects Portfolio</a></li>
+                        <li><a href="gallery.html" id="s1" alt="Gallery" title="Gallery">Gallery</a></li>
+                        <li><a href="contactus.html" id="s5" alt="Contact Us" title="Contact Us">Contact Us</a></li>
+                        <li><a href="careers.html" id="s1" alt="Careers" title="Careers">Careers</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <section class="clearfix"></section>
+        <!-- Header Section Ends -->
+
+        <!-- Banner Slider Section Starts -->
+        <section class="ksa-banners" id="banners">
+            <section class="ksa-bannerslider">
+                <section class="ksa-bannersliderInner">
+                    <figure>
+                        <img src="images/areasopt.jpg" class="img-responsive">
+                    </figure>
+                </section>
+            </section>
+        </section>
+        <!-- Banner Slider Section Ends -->
+        <!-- AREAS OF OPERATION Section Starts -->
+        <section id="areasofoperation">
+            <section class="areasofoperation inner">
+                <section class="container">
+                    <aside class="headAbout">
+                        <hr>
+                        <h3 class="aboutusHead pd">AREAS OF OPERATION</h3>
+                    </aside>
+                    <!--<p class="turnkeySol">Turnkey Solution</p>-->
+                    <span style="font-size: 16px;">We undertake turnkey projects including Civil, Electrical, Control & Automation and Instrumentation works
+                        related to<br>Power evacuation Substations / Switchyards and Transmission Lines upto 400 kV.</span></p>
+                    <section class="operationClacified">
+                        <!--<p class="opeClacified"> Our areas of operation is further classified as follows</p>-->
+                        <section class="areasofOptTabs">
+                            <section class="port-abt">
+                                <section class="port-abt-tab">
+                                    <section class="port-abt-tabinner">
+                                        <ul class="nav clearfix">
+                                            <li rel="Tab01"><a href="javascript:;">Non-Conventional Energy Sector</a></li>
+                                            <li rel="Tab02"><a href="javascript:;">Conventional Energy Sector</a></li>
+                                            <li rel="Tab03"><a href="javascript:;">Railway Electrification</a></li>
+                                            <li rel="Tab04"><a href="javascript:;">Industrial Electrification</a></li>
+                                            <li rel="Tab05"><a href="javascript:;">Manufacturing and Supply of BIO-COAL</a></li>
+                                        </ul>
+                                        <section class="tab-content">
+                                            <section class="port-abt-tabtrigger" rel="Tab01">Non-Conventional Energy Sector</section>
+                                            <aside id="Tab01" class="tab-pane">
+                                                <section class="tab-pane-inner">
+                                                    <section class="port1-abt">
+                                                        <section class="port1-abt-tab">
+                                                            <section class="port1-abt-tabinner">
+                                                                <ul class="nav1 clearfix">
+                                                                    <li rel="Tab011"><a href="javascript:;">Wind Power Projects</a></li>
+                                                                    <li rel="Tab021"><a href="javascript:;">Solar Power Projects</a></li>
+                                                                    <!--<li rel="Tab033"><a href="javascript:;">Terminal Bay Extention</a></li>-->
+                                                                </ul>
+                                                                <section class="tab-content1">
+                                                                    <!--<section class="port-abt-tabtrigger active" rel="Tab01"><span>Non-Conventional Energy Sector</span><aside class="rgticon">&nbsp;</aside></section>-->
+                                                                    <aside id="Tab011" class="tab-pane1">
+                                                                        <section class="tab-pane-inner1">
+                                                                            <p class="operation">
+                                                                                <a href="javascript:;" data-toggle="modal" data-target="#UnitSubstations">Unit Substation </a>
+                                                                                <a href="javascript:;" data-toggle="modal" data-target="#InternalOH">33kV Internal OH Lines</a>
+                                                                                <a href="javascript:;" data-toggle="modal" data-target="#EHVPooling1">EHV Pooling / Switching Substations</a>
+                                                                                <a href="javascript:;" data-toggle="modal" data-target="#EHVTransmission">EHV Transmission Lines</a>
+                                                                                <a href="javascript:;" data-toggle="modal" data-target="#TerminalBay">Terminal Bay Extention </a>
+                                                                            </p>
+                                                                        </section>
+                                                                    </aside>
+                                                                    <!--<section class="port-abt-tabtrigger" rel="Tab02"><span>Conventional Energy Sector Central / State Utility Boards</span></section>-->
+                                                                    <aside id="Tab021" class="tab-pane1">
+                                                                        <section class="tab-pane-inner1">
+                                                                            <p class="operation">
+                                                                                <a href="javascript:;" data-toggle="modal" data-target="#EHVPoolingSubstation">EHV Pooling Substation </a>
+                                                                                <a href="javascript:;" data-toggle="modal" data-target="#EHVTransmissionLines">EHV Transmission Lines </a>
+                                                                                <a href="javascript:;" data-toggle="modal" data-target="#terminalExtention">Terminal Bay Extention</a>
+                                                                            </p>
+                                                                        </section>
+                                                                    </aside>
+                                                                    <!--<aside id="Tab033" class="tab-pane1">
                               <section class="tab-pane-inner1">
                                 <p class="operation">
                                   <a href="javascript:;" data-toggle="modal" data-target="#EHVPoolingSubstation">EHV Pooling Substation </a>
@@ -162,908 +163,920 @@ document.oncontextmenu = function () {
                                 </p>
                               </section>
                             </aside>-->
-                          </section>
+                                                                </section>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </aside>
+                                            <section class="port-abt-tabtrigger" rel="Tab02">Conventional Energy Sector</section>
+                                            <aside id="Tab02" class="tab-pane">
+                                                <section class="tab-pane-inner">
+                                                    <section class="port2-abt">
+                                                        <section class="port2-abt-tab">
+                                                            <section class="port2-abt-tabinner">
+                                                                <p class="operation">
+                                                                    <a href="javascript:;" data-toggle="modal" data-target="#EHVconvSubstation">EHV Substation/Terminal Bay Extension</a>
+                                                                    <a href="javascript:;" data-toggle="modal" data-target="#HVEHVTransmission">HV/EHV Transmission Line</a>
+                                                                    <a href="javascript:;" data-toggle="modal" data-target="#DSSW">Distribution System Strengthening Works (RAPDRP / IPDS / HVDS Projects)</a>
+                                                                </p>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </aside>
+                                            <section class="port-abt-tabtrigger" rel="Tab03">Railway Electrification</section>
+                                            <aside id="Tab03" class="tab-pane">
+                                                <section class="tab-pane-inner">
+                                                    <section class="port2-abt">
+                                                        <section class="port2-abt-tab">
+                                                            <section class="port2-abt-tabinner">
+                                                                <p class="operation">
+                                                                    <a href="javascript:;" data-toggle="modal" data-target="#RailwayElectrification">Railway Electrification</a>
+                                                                </p>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </aside>
+                                            <section class="port-abt-tabtrigger" rel="Tab04">Industrial Electrification</section>
+                                            <aside id="Tab04" class="tab-pane">
+                                                <section class="tab-pane-inner">
+                                                    <section class="port2-abt">
+                                                        <section class="port2-abt-tab">
+                                                            <section class="port2-abt-tabinner">
+                                                                <p class="operation">
+                                                                    <a href="javascript:;" data-toggle="modal" data-target="#IndustrialElectrification">Industrial Electrification</a>
+                                                                </p>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </aside>
+                                            <section class="port-abt-tabtrigger" rel="Tab05">Manufacturing and Supply of BIO-COAL</section>
+                                            <aside id="Tab05" class="tab-pane">
+                                                <section class="tab-pane-inner">
+                                                    <section class="port2-abt">
+                                                        <section class="port2-abt-tab">
+                                                            <section class="port2-abt-tabinner">
+                                                                <p class="operation">
+                                                                    <a href="javascript:;" data-toggle="modal" data-target="#IndustrialElectrification">Manufacturing and Supply of BIO-COAL</a>
+                                                                </p>
+                                                                <p class="text-left" style="font-size: 14px;margin-top: 15px;">Biocoal’ is solid fuel from biomass. Biomass waste is converted from a bulky, low energy high moisture content to having higher energy density, low moisture, mostly lower ash content and having very low harmful gases emission like SO2 & NO2. Pellets/briquettes of biocoal are made from processed agricultural refuse. The process of converting agricultural waste to solid fuel is net non-polluting. The application of coal, wood, furnace oil and other conventional fuels in industrial as well as in domestic practices can be readily substituted with the use of biocoals. <br><br>
+                                                                    Loose Biocoal has very low specific density of just 60 to 180 Kg/m3 but in the briquette form has high specific density (1200 Kg/m3) and bulk density (800 Kg/m3). Costs for transportation of biocoal and loading/unloading are much lesser and storage requirement is also substantially reduced. <br><br>
+                                                                    India produces huge quantity of biomass waste which are burnt or allowed to degrade. Biocoal will add value to agriculture produce and save the country valuable foreign exchange and reduce pollution. Net pollution from biocoal is zero unlike mineral coal.
+                                                                    KSA in technical collaboration with Aarath Engineers has designed a process to convert various types of biomass into biocoal. We are in process of setting up one 12000t per month plant in Manamadurai.
+                                                                </p>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </aside>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
                         </section>
-                      </section>
-                    </section>
-                  </section>
-                </aside>
-                <section class="port-abt-tabtrigger" rel="Tab02">Conventional Energy Sector</section>
-                <aside id="Tab02" class="tab-pane">
-                  <section class="tab-pane-inner">
-                    <section class="port2-abt">
-                      <section class="port2-abt-tab">
-                        <section class="port2-abt-tabinner">
-                          <p class="operation">
-                            <a href="javascript:;" data-toggle="modal" data-target="#EHVconvSubstation">EHV Substation/Terminal Bay Extension</a>
-                            <a href="javascript:;" data-toggle="modal" data-target="#HVEHVTransmission">HV/EHV Transmission Line</a>
-														<a href="javascript:;" data-toggle="modal" data-target="#DSSW">Distribution System Strengthening Works (RAPDRP / IPDS / HVDS Projects)</a>
-                          </p>
-                        </section>
-                      </section>
-                    </section>
-                  </section>
-                </aside>
-                <section class="port-abt-tabtrigger" rel="Tab03">Railway Electrification</section>
-                <aside id="Tab03" class="tab-pane">
-                  <section class="tab-pane-inner">
-                    <section class="port2-abt">
-                      <section class="port2-abt-tab">
-                        <section class="port2-abt-tabinner">
-                          <p class="operation">
-                            <a href="javascript:;" data-toggle="modal" data-target="#RailwayElectrification">Railway Electrification</a>
-                          </p>
-                        </section>
-                      </section>
-                    </section>
-                  </section>
-                </aside>
-                <section class="port-abt-tabtrigger" rel="Tab04">Industrial Electrification</section>
-                <aside id="Tab04" class="tab-pane">
-                  <section class="tab-pane-inner">
-                    <section class="port2-abt">
-                      <section class="port2-abt-tab">
-                        <section class="port2-abt-tabinner">
-                          <p class="operation">
-                            <a href="javascript:;" data-toggle="modal" data-target="#IndustrialElectrification">Industrial Electrification</a>
-                          </p>
-                        </section>
-                      </section>
-                    </section>
-                  </section>
-                </aside>
-                <section class="port-abt-tabtrigger" rel="Tab05">Manufacturing and Supply of BIO-COAL</section>
-                <aside id="Tab05" class="tab-pane">
-                  <section class="tab-pane-inner">
-                    <section class="port2-abt">
-                      <section class="port2-abt-tab">
-                        <section class="port2-abt-tabinner">
-                          <p class="operation">
-                            <a href="javascript:;" data-toggle="modal" data-target="#IndustrialElectrification">Manufacturing and Supply of BIO-COAL</a>
-                          </p>
-                        </section>
-                      </section>
-                    </section>
-                  </section>
-                </aside>
-              </section>
-            </section>
-          </section>
-        </section>
-        </section>
-      <h3 class="aboutusHead">Summary of credentials</h3>
-      <section class="summaryInfo">
-        <div class="bd-example summary">
-         <div class="table-responsive">
-          <table class="table">
-           <thead>
-            <tr>
-             <th>Sl.No</th>
-             <th>Description</th>
-             <th>Unit</th>
-             <th>Quantum of Works</th>
-            </tr>
-           </thead>
-           <tbody>
-            <tr>
-             <td>01</td>
-             <td>EHV Substations upto 400kV
-               <!--<span>400kV SS - 15 Nos</span>
+                        <a href="javascript:void(0)">
+                            <h3 class="aboutusHead" type="button" data-toggle="collapse" data-target="#demo">Summary of credentials +</h3>
+                        </a>
+                        <div id="demo" class="collapse">
+                            <section class="summaryInfo">
+                                <div class="bd-example summary">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Sl.No</th>
+                                                    <th>Description</th>
+                                                    <th>Unit</th>
+                                                    <th>Quantum of Works</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>01</td>
+                                                    <td>EHV Substations upto 400kV
+                                                        <!--<span>400kV SS - 15 Nos</span>
                <span>220kV SS - 18 Nos</span>
                <span>110 / 132kV SS - 10 Nos</span>
                <span>66kV SS - 3 Nos</span>-->
-              </td>
-             <td>Nos</td>
-             <td>46</td>
-            </tr>
-             <tr>
-             <td>02</td>
-             <td>S/C & D/C EHV Transmission Line upto 220kV
-               <!--<span>220 kV S/C TL – 78 kMs</span>
+                                                    </td>
+                                                    <td>Nos</td>
+                                                    <td>46</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02</td>
+                                                    <td>S/C & D/C EHV Transmission Line upto 220kV
+                                                        <!--<span>220 kV S/C TL – 78 kMs</span>
                <span>220 kV D/C TL – 45 kMs</span>
                <span>110 / 132 kV S/C TL – 109 kMs</span>
                <span>66 kV S/C TL – 10 kMs</span>-->
-              </td>
-             <td>RkM</td>
-             <td>241</td>
-            </tr>
-             <tr>
-             <td>03</td>
-             <td>33kV Transformer, Metering & VCB Yards for Wind Power Projects</td>
-             <td>Nos</td>
-             <td>123</td>
-            </tr>
-             <tr>
-             <td>04</td>
-             <td>33kV Overhead lines for Wind Power Projects</td>
-             <td>RkM</td>
-             <td>135</td>
-            </tr>
-             <tr>
-             <td>05</td>
-             <td>Distribution Transformer upto 22 kV</td>
-             <td>Nos</td>
-             <td>2755</td>
-            </tr>
-            <tr>
-             <td>06</td>
-             <td>HT/LT Distribution Line</td>
-             <td>RkM</td>
-             <td>100</td>
-            </tr>
-            <tr>
-             <td>07</td>
-             <td>Aerial Bunched Cables</td>
-             <td>RkM</td>
-             <td>89</td>
-            </tr>
-            <tr>
-             <td>08</td>
-             <td>Under Ground Cables (upto 33 kV)</td>
-             <td>RkM</td>
-             <td>129</td>
-            </tr>
-           </tbody>
-          </table>
-         </div>
-        </div>
-       </section>
-			  </section>
-		  </section>
-  	</section>
-  </section>
-  <!-- AREAS OF OPERATION Section Ends -->
-  <!-- Footer Section Starts -->
-  <footer>
-    <section class="container">
-      <p>&copy; 2018 - KSA Powerinfra Pvt Ltd</p>
-      <div class="design-dev">
-					<a href="http://gobrand360.com/" target="_blank" class="link">
-						<span class="txt">Designed & Developed</span>
-						<img class="logo" src="images/gobrandlogo.png" width="60%" height="" alt="" style="margin-top: -5px;">
-					</a>
-				</div>
-    </section>
-  </footer>
-  <!-- Footer Section Ends -->
-  
-  <!-- Overall Wrapper Ends -->
-<!-- Goto Top-->
-<a href="javascript:;" id="return-to-top"><img src="images/gotop.png" class="img-responsive" ></a>
-<script type="text/javascript">
-$(document).ready(function () {
-  /*areas of operations*/
-    jQuery(".areasofoperation .port-abt .port-abt-tab .tab-content .tab-pane").hide();
-    jQuery(".areasofoperation .port-abt .port-abt-tab .nav > li").click(function() {
-      jQuery(".areasofoperation .port-abt .port-abt-tab .tab-content .tab-pane").hide();
-      var activeTab = jQuery(this).attr("rel");
-      jQuery(".areasofoperation .port-abt .port-abt-tab .tab-content .tab-pane#"+activeTab).fadeIn(500);
-      jQuery(".areasofoperation .port-abt .port-abt-tab .nav > li").removeClass("active");
-      jQuery(".areasofoperation .port-abt .port-abt-tab .nav > li[rel="+activeTab+"]").addClass("active");
-    });
-    jQuery(".areasofoperation .port-abt .port-abt-tab .tab-content .tab-pane").hide();
-    jQuery(".areasofoperation .port-abt-tabtrigger").click(function() {
-      jQuery(".areasofoperation .port-abt .port-abt-tab .tab-content .tab-pane").hide();
-      var activeTab = jQuery(this).attr("rel");
-      console.log(activeTab);
-      jQuery(".areasofoperation .port-abt .port-abt-tab .tab-content .tab-pane#"+activeTab).fadeIn(500);
-      jQuery(".areasofoperation .port-abt-tabtrigger").removeClass("active");
-      jQuery(".areasofoperation .port-abt-tabtrigger[rel="+activeTab+"]").addClass("active");
+                                                    </td>
+                                                    <td>RkM</td>
+                                                    <td>241</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>03</td>
+                                                    <td>33kV Transformer, Metering & VCB Yards for Wind Power Projects</td>
+                                                    <td>Nos</td>
+                                                    <td>123</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>04</td>
+                                                    <td>33kV Overhead lines for Wind Power Projects</td>
+                                                    <td>RkM</td>
+                                                    <td>135</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>05</td>
+                                                    <td>Distribution Transformer upto 22 kV</td>
+                                                    <td>Nos</td>
+                                                    <td>2755</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>06</td>
+                                                    <td>HT/LT Distribution Line</td>
+                                                    <td>RkM</td>
+                                                    <td>100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>07</td>
+                                                    <td>Aerial Bunched Cables</td>
+                                                    <td>RkM</td>
+                                                    <td>89</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>08</td>
+                                                    <td>Under Ground Cables (upto 33 kV)</td>
+                                                    <td>RkM</td>
+                                                    <td>129</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
 
-    });
-  jQuery(".port1-abt .port1-abt-tab .tab-content1 .tab-pane1").hide();
-		jQuery(".port1-abt .port1-abt-tab .nav1 > li").click(function() {
-    jQuery(".port1-abt .port1-abt-tab .tab-content1 .tab-pane1").hide();
-    var activeTab = jQuery(this).attr("rel");
-    jQuery(".port1-abt .port1-abt-tab .tab-content1 .tab-pane1#"+activeTab).fadeIn(500);
-    jQuery(".port1-abt .port1-abt-tab .nav1 > li").removeClass("active");
-    jQuery(".port1-abt .port1-abt-tab .nav1 > li[rel="+activeTab+"]").addClass("active");
-  });
-  jQuery(".port2-abt .port2-abt-tab .tab-content2 .tab-pane2").hide();
-		jQuery(".port2-abt .port2-abt-tab .tab-content2 .tab-pane2:first").show();
-		jQuery(".port2-abt .port2-abt-tab .nav2 > li").click(function() {
-			if(!(jQuery(this).hasClass('active'))) {
-				jQuery(".port2-abt .port2-abt-tab .tab-content2 .tab-pane2").hide();
-				var activeTab = jQuery(this).attr("rel");
-				jQuery(".port2-abt .port2-abt-tab .tab-content2 .tab-pane2#"+activeTab).fadeIn(500);
-				jQuery(".port2-abt .port2-abt-tab .nav2 > li").removeClass("active");
-				jQuery(".port2-abt .port2-abt-tab .nav2 > li[rel="+activeTab+"]").addClass("active");
-			}
-  });
-  jQuery('.operation a').click(function(){
-    jQuery('.operation a').removeClass('active');
-    jQuery(this).addClass('active');
-  });
-  
-  var sync1 = $(".popupinfoSlider");
-  sync1.owlCarousel({
-    singleItem : true,
-    slideSpeed : 1000,
-    pagination:false,
-    afterAction : syncPosition,
-    responsiveRefreshRate : 200,
-});
-  $(".next").click(function(){
-    sync1.trigger('owl.next');
-})
-  $(".prev").click(function(){
-    sync1.trigger('owl.prev');
-})
- 
- function syncPosition(el){
-  var current = this.currentItem;
-  $("#sync1")
-   .find(".owl-item")
-   .removeClass("synced")
-   .eq(current)
-   .addClass("synced")
-  if($("#sync1").data("owlCarousel") !== undefined){
-   center(current)
-  }
- }
- 
- function center(number){
-  var sync2visible = sync1.data("owlCarousel").owl.visibleItems;
-  var num = number;
-  var found = false;
-  for(var i in sync2visible){
-   if(num === sync2visible[i]){
-    var found = true;
-   }
-  }
- 
-  if(found===false){
-   if(num>sync2visible[sync2visible.length-1]){
-    sync1.trigger("owl.goTo", num - sync2visible.length+2)
-   }else{
-    if(num - 1 === -1){
-     num = 0;
-    }
-    sync1.trigger("owl.goTo", num);
-   }
-  } else if(num === sync2visible[sync2visible.length-1]){
-   sync1.trigger("owl.goTo", sync2visible[1])
-  } else if(num === sync2visible[0]){
-   sync1.trigger("owl.goTo", num-1)
-  }
-  
- }
- }); 
-  
-  
-  // ===== Scroll to Top ==== 
-$(window).scroll(function() {
-  if ($(this).scrollTop() >= 50) {  
-        $('header').addClass('headerAnim');
-        $('#return-to-top').fadeIn(500);
-    } else {
-        $('#return-to-top').fadeOut(500); 
-        $('header').removeClass('headerAnim');
-    } 
-});
-$('#return-to-top').click(function() { 
-  $('body,html').animate({
-    scrollTop : 0 
-  }, 500);
-});
-  jQuery(window).on('load',function() {
- jQuery("#preloader").fadeOut();
-});
-</script>
-  <!-- UnitSubstations -->
-  <div class="modal fade" id="UnitSubstations" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="customNavigation">
-            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="owl-carousel popupinfoSlider">
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/USS/01.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Renewable Energy Generation Pvt. Ltd., Chennai</h3>
-                <p>Construction of 33kV Outdoor switching DP including associated civil works.<br>
-								<b>Location: </b>Dalot
-								<br><b>State: </b>Rajasthan <br>
-								<b>Year of Completion: </b>March 2013<br>
-								<b>Qty in Nos: </b>2</p>
-              </aside>
+                    </section>
+                </section>
             </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/USS/02.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>ReGen Power Generation Pvt. Ltd., Chennai</h3>
-                <p>Construction of 33/0.620kV Unit Substation including all associated civil works. <br>
-								<b>Location: </b>Dalot & Devgarh<br><b>State: </b>Rajasthan<br>
-								<b>Year of Completion: </b>March 2013<br> 
-								<b>Qty in Nos: </b>20</p>
-              </aside>
+        </section>
+        <!-- AREAS OF OPERATION Section Ends -->
+        <!-- Footer Section Starts -->
+        <footer>
+            <section class="container">
+                <p>&copy; 2018 - KSA Powerinfra Pvt Ltd</p>
+                <div class="design-dev">
+                    <a href="http://gobrand360.com/" target="_blank" class="link">
+                        <span class="txt">Designed & Developed</span>
+                        <img class="logo" src="images/gobrandlogo.png" width="60%" height="" alt="" style="margin-top: -5px;">
+                    </a>
+                </div>
             </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/USS/03.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Wind world (India) Ltd., Mumbai</h3>
-                <p>Construction of 33/0.620kV Unit Substation including all associated civil works. <br> <b>Location: </b>Belgaum <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>January 2014 <br> <b>Qty in Nos: </b>25</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/USS/04.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Bindu Urja Infrastructure Ltd., Bangalore</h3>
-                <p>Construction of 33/0.620kV Unit Substation including all associated civil works.<br> <b>Location: </b>Bijapur <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>April 2014 <br> <b>Qty in Nos: </b>24</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/USS/05.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Renewable Energy Generation Pvt. Ltd. Chennai</h3>
-                <p>Construction of 33/0.620kV Unit Substation including all associated civil works.<br> <b>Location: </b>Betul <br><b>State: </b>Madhya Pradesh <br><b>Year of Completion: </b> December 2014 <br> <b>Qty in Nos: </b>18</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/USS/06.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Orange Mamatkheda Wind Pvt. Ltd New Delhi</h3>
-                <p>Construction of 33/0.620kV Unit Substation including all associated civil works. <br> <b>Location: </b>Mamatkheda <br><b>State: </b>Madhya Pradesh <br><b>Year of Completion: </b>April 2015<br> <b>Qty in Nos: </b>34</p>
-              </aside>
-            </section>
-          </div>
+        </footer>
+        <!-- Footer Section Ends -->
 
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Internal OH -->
-  <div class="modal fade" id="InternalOH" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="customNavigation">
-            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-					
-					<div class="owl-carousel popupinfoSlider">
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/IOL/01.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Renewable Energy Generation Pvt. Ltd. Chennai</h3>
-                <p>Construction of 33kV Over Head Lines as following <br>
-i. 8.17kMs DCOH Line with ACSR Dog<br>
-ii. 6.539kMs SCOH Line with ACSR Dog <br>
- <b>Location: </b>Dalot <br><b>State: </b>Rajasthan <br> <b>Year of Completion: </b>March 2013 <br><b>Route Length in kM: </b>15</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/IOL/02.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Wind world (India) Ltd Mumbai.</h3>
-                <p>Construction of 33kV Over Head Lines as following <br>
-i. 15kMs DCOH Line with ACSR Coyote <br>
-ii. 3.6kMs SCOH Line with ACSR Coyote<br>
-iii. 15kMs SCOH Line with ACSR Rabit<br>
- <b>Location: </b>Belgaum <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>January 2014 <br> <b>Route Length in kM: </b>34</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/IOL/03.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-               <h3>Bindu Urja Infrastructure Ltd. Bangalore.</h3>
-                <p>Construction of 33kV Over Head Lines as following <br>
-i. 9.1kMs SCOH Line with ACSR Rabbit<br>
- <b>Location: </b>Bijapur <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>April 2014 <br> <b>Route Length in kM: </b>9</p> 
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/IOL/04.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Orange Mamatkheda Wind Pvt. Ltd New Delhi.</h3>
-                <p>Construction of 33kV Over Head Lines as following <br>
-i. 24.65kMs SCOH Line with ACSR Dog <br>
-ii. 5kMs SCOH Line with ACSR Panther <br>
-iii. 8.35kMs DCOH Line with ACSR Panther<br>
- <b>Location: </b>Mamatkheda <br><b>State: </b>Madhya Pradesh <br> <b>Year of Completion: </b>April 2015 <br><b>Route Length in kM: </b>38</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/IOL/05.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>INOX Wind Infrastructure Services Ltd Noida.</h3>
-                <p>Construction of 33kV Over Head Lines as following <br>
-i. 3.8kMs DCOH Line with ACSR Panther <br>
-ii. 3.8kMs SCOH Line with ACSR Dog <br>
- <b>Location: </b>Bijapur <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2018 <br><b>Route Length in kM: </b>8</p>              </aside>
-            </section>
-            
-          </div>
-							
-							
-					
+        <!-- Overall Wrapper Ends -->
+        <!-- Goto Top-->
+        <a href="javascript:;" id="return-to-top"><img src="images/gotop.png" class="img-responsive"></a>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*areas of operations*/
+                jQuery(".areasofoperation .port-abt .port-abt-tab .tab-content .tab-pane").hide();
+                jQuery(".areasofoperation .port-abt .port-abt-tab .nav > li").click(function() {
+                    jQuery(".areasofoperation .port-abt .port-abt-tab .tab-content .tab-pane").hide();
+                    var activeTab = jQuery(this).attr("rel");
+                    jQuery(".areasofoperation .port-abt .port-abt-tab .tab-content .tab-pane#" + activeTab).fadeIn(500);
+                    jQuery(".areasofoperation .port-abt .port-abt-tab .nav > li").removeClass("active");
+                    jQuery(".areasofoperation .port-abt .port-abt-tab .nav > li[rel=" + activeTab + "]").addClass("active");
+                });
+                jQuery(".areasofoperation .port-abt .port-abt-tab .tab-content .tab-pane").hide();
+                jQuery(".areasofoperation .port-abt-tabtrigger").click(function() {
+                    jQuery(".areasofoperation .port-abt .port-abt-tab .tab-content .tab-pane").hide();
+                    var activeTab = jQuery(this).attr("rel");
+                    console.log(activeTab);
+                    jQuery(".areasofoperation .port-abt .port-abt-tab .tab-content .tab-pane#" + activeTab).fadeIn(500);
+                    jQuery(".areasofoperation .port-abt-tabtrigger").removeClass("active");
+                    jQuery(".areasofoperation .port-abt-tabtrigger[rel=" + activeTab + "]").addClass("active");
 
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- EHV Pooling -->
-  <div class="modal fade" id="EHVPooling1" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="customNavigation">
-            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="owl-carousel popupinfoSlider">
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/01.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Renewable Energy Generation Pvt. Ltd. Chennai</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 1x50MVA 33/132 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>132 kV <br>
-								<b>Project:</b> 150MW Wind Farm<br>
-								<b>Location: </b>Dalot <br><b>State: </b>Rajasthan <br><b>Year of Completion: </b>March 2013</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/02.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Leitner Shriram Mfg. Ltd. Chennai</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 1x65MVA 33/220 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br>
-<b>Project:</b> 200MW Wind Farm <br><b>Location: </b>Tadipatri <br><b>State: </b>Andhra Pradesh <br> <b>Year of Completion: </b>July 2013</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/03.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Gamesa Wind Turbines Pvt. Ltd. Chennai</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 2x80MVA 132/33 kV Pooling Substation including construction of CRB & other associated civil works on Partial Turnkey Basis. <br><b>Voltage Level: </b>132 kV <br><b>Project:</b> 150MW Wind Farm<br> <b>Location: </b>Chandgarh <br><b>State: </b>Madhya Pradesh <br><b>Year of Completion: </b>March 2015</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/04.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>INOX Wind Infrastructure Services Ltd Noida</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 2x100MVA 33/220 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. Level:220 kV <br><b>Project: </b> 200MW Wind Farm<br> <b>Location: </b>Nippania <br><b>State: </b>Madhya Pradesh <br> <b>Year of Completion: </b>December 2015</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/05.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>INOX Wind Infrastructure Services Ltd Noida</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 2x100MVA 220/33 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> 150MW Wind Farm<br><b>Location: </b>Lahori <br><b>State: </b>Madhya Pradesh <br><b>Year of Completion: </b>March 2016</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/06.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Gamesa Wind Turbines Pvt. Ltd. Chennai</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 2x80MVA 132/33 kV Pooling Substation including construction of CRB & other associated civil works on Partial Turnkey Basis. <br><b>Voltage Level: </b>132 kV <br><b>Project:</b> 150MW Wind Farm<br> <b>Location: </b>Fatanpur <br><b>State: </b>Madhya Pradesh <br><b>Year of Completion: </b>February 2016</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/07.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Watsun Infrabuild Pvt. Ltd. Mumbai</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 3x50MVA 230/33 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br> <b>Project:</b> 300MW Wind Farm<br><b>Location: </b>Periyapatti <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>July 2016</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/08.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Aspen Infrastructure Ltd. Pune</h3>
-                <p>Supply, Erection, Testing & Commissioning of 3x100MVA 220/33 kV Pooling Substation including construction of CRB & other associated civil works on Partial Turnkey Basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> 100MW Wind Farm<br> <b>Location: </b>Beluguppa <br><b>State: </b>Andhra Pradesh <br><b>Year of Completion: </b>July 2016</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/09.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Sembcorp GreenInfra Wind Generation Pvt. Ltd. New Delhi</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 2x50MVA 220/33 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> 200MW Wind Farm<br> <b>Location: </b>Harappanahalli <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>August 2016</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/10.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Mytrah Energy India Ltd. Hyderabad.</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 2x100MVA 220/33 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br> <b>Project:</b> 150MW Wind Farm<br><b>Location: </b>Kurnool <br><b>State: </b>Andhra Pradesh <br> <b>Year of Completion: </b>September2016</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/11.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Renewable Energy Generation Pvt. Ltd. Chennai</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 2x80MVA 220/33 kV Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> Switching Station<br> <b>Location: </b>Karadikonda <br><b>State: </b>Andhra Pradesh <br><b>Year of Completion: </b>March 2017</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/12.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Gamesa Wind Turbines Pvt. Ltd. Chennai</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 220 kV Switching Substation including construction of CRB & other associated civil works on Partial Turnkey Basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> 225MW Wind Farm<br> <b>Location: </b>Bableshwar <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2017</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/13.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>INOX Wind Infrastructure Services Ltd. Noida</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 1x125 MVA & 1x100 MVA 220/33 kV Pooling Substation.incl. construction of CRB and other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> 300MW Wind Farm<br> <b>Location: </b>Sadla <br><b>State: </b>Gujarat <br><b>Year of Completion: </b>March 2017</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/14.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Aspen Infrastructure Ltd. Pune</h3>
-                <p>Supply, Erection, Testing & Commissioning of 3x100MVA 220/33 kV Pooling Substation incl construction of CRB and other accosiated civil works on Partial Turnkey Basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> 150MW Wind Farm<br> <b>Location: </b>Amidhyala <br><b>State: </b>Andhra Pradesh <br> <b>Year of Completion: </b>March 2017</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVP/15.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>INOX Wind Infrastructure Services Ltd. Noida</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 1x75MVA & 1x50MVA 220/33 kV Pooling Substation incl construction of CRB and other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br> <b>Project:</b> 103MW Wind Farm<br><b>Location: </b>Bijapur <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2018</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/inpro.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-							<p>On Going Projects</p><br>
-                <h3>Powerica Limited Mumbai</h3>
-                <p>Supply, Erection, Testing & Commissioning of 66/33 kV 1x100MVA Pooling Substation incl. other switchyard related civil works on total turnkey basis. <br><b>Voltage Level: </b>66 kV <br> <b>Project:</b> 50MW Wind Farm<br><b>Location: </b>Bhatel <br><b>State: </b>Gujarat <br> <b>Year of Completion: </b>September 2018</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/inpro.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-							<p>On Going Projects</p><br>
-                <h3>Suzlon Power Infrastructures Limited Pune.</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 1x100MVA 220/33 kV Pooling Substation incl. construction of CRB and other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br> <b>Project:</b> 200MW Wind Farm<br><b>Location: </b>Villiseri <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>September 2018</p>
-              </aside>
-            </section>
-          </div>
+                });
+                jQuery(".port1-abt .port1-abt-tab .tab-content1 .tab-pane1").hide();
+                jQuery(".port1-abt .port1-abt-tab .nav1 > li").click(function() {
+                    jQuery(".port1-abt .port1-abt-tab .tab-content1 .tab-pane1").hide();
+                    var activeTab = jQuery(this).attr("rel");
+                    jQuery(".port1-abt .port1-abt-tab .tab-content1 .tab-pane1#" + activeTab).fadeIn(500);
+                    jQuery(".port1-abt .port1-abt-tab .nav1 > li").removeClass("active");
+                    jQuery(".port1-abt .port1-abt-tab .nav1 > li[rel=" + activeTab + "]").addClass("active");
+                });
+                jQuery(".port2-abt .port2-abt-tab .tab-content2 .tab-pane2").hide();
+                jQuery(".port2-abt .port2-abt-tab .tab-content2 .tab-pane2:first").show();
+                jQuery(".port2-abt .port2-abt-tab .nav2 > li").click(function() {
+                    if (!(jQuery(this).hasClass('active'))) {
+                        jQuery(".port2-abt .port2-abt-tab .tab-content2 .tab-pane2").hide();
+                        var activeTab = jQuery(this).attr("rel");
+                        jQuery(".port2-abt .port2-abt-tab .tab-content2 .tab-pane2#" + activeTab).fadeIn(500);
+                        jQuery(".port2-abt .port2-abt-tab .nav2 > li").removeClass("active");
+                        jQuery(".port2-abt .port2-abt-tab .nav2 > li[rel=" + activeTab + "]").addClass("active");
+                    }
+                });
+                jQuery('.operation a').click(function() {
+                    jQuery('.operation a').removeClass('active');
+                    jQuery(this).addClass('active');
+                });
 
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- EHV Transmission -->
-  <div class="modal fade" id="EHVTransmission" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="customNavigation">
-            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="owl-carousel popupinfoSlider">
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVT/01.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Renewable Energy Generation Pvt. Ltd. Chennai.</h3>
-                <p>Survey, supply, erection, testing & commissioning of 230 kV Single circuit line on SC towers using ACSR Zebra conductor
-between existing Pugalur TNEB substation and Windfarm Pooling substation<br><b>Voltage Level: </b></b>220 kV <br><b>Location: </b>Pugalur & Paruthiyur 	<br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>May 2014 <br> <b>Route Length in kM: </b>59</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVT/02.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Watsun Infrabuild Pvt. Ltd</h3>
-                <p>Survey, supply, erection, testing & commissioning of 230 kV S/C line on D/C towers from the Windfarm Pooling Substation to TNEB 400 kV substation <br><b>Voltage Level: </b>220 kV <br><b>Location: </b>Anaikadavu <br><b>State: </b>Tamil Nadu <br><b>Year of Completion: </b>July 2016 <br><b>Route Length in kM: </b>17</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVT/03.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Gamesa Wind Turbines Pvt. Ltd. Chennai.</h3>
-                <p>Construction of 220kV LILO from existing Basavana Bagewadi DC line at Kudagi to switching station <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Bableshwar <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2017 <br> <b>Route Length in kM: </b>2</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVT/04.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Gamesa Wind Turbines Pvt. Ltd. Chennai.</h3>
-                <p>Supply, Erection, Testing & Commissioning of 220 kV DC line on DC tower with ACSR Drake conductor from switching Station to the wind farm Pooling Substation station <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Bableshwar <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2017 <br><b>Route Length in kM: </b>23</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/EHVT/05.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>INOX Wind Infrastructure Services Ltd Noida.</h3>
-                <p>Supply, Erection, Testing & Commissioning of 220 kV SC line on DC tower with ACSR Drake conductor from existing Basawana bagiwadi KPTCL substation to wind farm pooling substation <br><b>Voltage Level: </b>220 kV <br><b>Location: </b>Bijapur <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2018 <br><b>Route Length in kM: </b>2</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/inpro.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-							<p>On Going Projects</p><br>
-                <h3>Suzlon Power Infrastructures Limited Pune.</h3>
-                <p>Supply, Erection, Testing & Commissioning of 220 kV SC line on DC tower with Al 59 Moose conductor from existing Kayathar TNEB SS to Wind farm Pooling Substation <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Kayathar <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>September 2018 <br> <b>Route Length in kM: </b>21</p>
-              </aside>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- TerminalBay -->
-  <div class="modal fade" id="TerminalBay" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="customNavigation">
-            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="owl-carousel popupinfoSlider">
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/TB/01.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Leitner Shriram Mfg. Ltd. Chennai.</h3>
-                <p>Construction of 1 No. of 220kV Terminal Bay Extension at existing APTRANSCO Substation. <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Tadipatri <br><b>State: </b>Andhra Pradesh <br> <b>Year of Completion: </b>July 2013 <br> <b>No of Bays: </b>1</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/TB/02.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Renewable Energy Generation Pvt. Ltd. Chennai.</h3>
-                <p>Construction of 1 No. of 220kV Terminal Bay Extension at existing 220/110kV TNEB Substation <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Pugalur <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>July 2016 <br> <b>No of Bays: </b>1</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/wind/TB/03.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>INOX Wind Infrastructure Services Ltd Noida.</h3>
-                <p>Construction of 1 No. of 220kV Terminal Bay Extension at existing 220/110/33kV KPTCL Substation <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Basawanabagiwadi <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>March 2018 <br> <b>No of Bays: </b>1</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/inpro.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-							<p>On Going Projects</p><br>
-                <h3>Powerica Limited Mumbai.</h3>
-                <p>Construction of 1 No. of 66kV Terminal Bay Extension at existing 132/66 GETCO Substation <br><b>Voltage Level: </b>66 kV <br> <b>Location: </b>Kambhaliya <br><b>State: </b>Gujarat <br><b>Year of Completion: </b>September 2018 <br> <b>No of Bays: </b>1</p>
-              </aside>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- EHVPoolingSubstation -->
-  <div class="modal fade" id="EHVPoolingSubstation" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="customNavigation">
-            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="owl-carousel popupinfoSlider">
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/solor/EHVP/01.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Kshema Power Mandal Ananthapur.</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 1x50MVA 33 / 132 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>132 kV <br> <b>Project:</b> 50MW Solar Farm<br><b>Location: </b>Sitamau <br><b>State: </b>Madhya Pradesh <br> <b>Year of Completion: </b>December 2014</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/solor/EHVP/02.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Amplus Energy Solutions Pvt. Ltd Gurgaon.</h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 220kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br> <b>Project:</b> 170MW Solar Farm<br><b>Location: </b>Gadag <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2018</p>
-              </aside>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                var sync1 = $(".popupinfoSlider");
+                sync1.owlCarousel({
+                    singleItem: true,
+                    slideSpeed: 1000,
+                    pagination: false,
+                    afterAction: syncPosition,
+                    responsiveRefreshRate: 200,
+                });
+                $(".next").click(function() {
+                    sync1.trigger('owl.next');
+                })
+                $(".prev").click(function() {
+                    sync1.trigger('owl.prev');
+                })
 
-  <!-- EHVTransmissionLines -->
-  <div class="modal fade" id="EHVTransmissionLines" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="customNavigation">
-            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="owl-carousel popupinfoSlider">
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/solor/EHVT/01.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Amplus Energy Solutions Pvt. Ltd Gurgaon.</h3>
-                <p>Survey, supply, erection, testing & commissioning of 220 kV Double circuit line on DC towers using ACSR Drake conductor between existing 220/33kV KPTCL substation and Solar farm Pooling substation <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Gadag <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>March 2018 <br><b>Route Length in kM: </b>7</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/solor/EHVT/02.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Ecoren Energy Ltd Hyderabad.</h3>
-                <p>Survey, supply, erection, testing & commissioning of 110 kV Single circuit line on DC towers using ACSR Lynx conductor between existing 110/11kV KPTCL substation and Pooling substation <br><b>Voltage Level: </b>110 kV <br><b>Location: </b>Mulluar <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>April 2018 <br> <b>Route Length in kM: </b>21</p>
-              </aside>
-            </section>
-            <!--<section class="slider">
+                function syncPosition(el) {
+                    var current = this.currentItem;
+                    $("#sync1")
+                        .find(".owl-item")
+                        .removeClass("synced")
+                        .eq(current)
+                        .addClass("synced")
+                    if ($("#sync1").data("owlCarousel") !== undefined) {
+                        center(current)
+                    }
+                }
+
+                function center(number) {
+                    var sync2visible = sync1.data("owlCarousel").owl.visibleItems;
+                    var num = number;
+                    var found = false;
+                    for (var i in sync2visible) {
+                        if (num === sync2visible[i]) {
+                            var found = true;
+                        }
+                    }
+
+                    if (found === false) {
+                        if (num > sync2visible[sync2visible.length - 1]) {
+                            sync1.trigger("owl.goTo", num - sync2visible.length + 2)
+                        } else {
+                            if (num - 1 === -1) {
+                                num = 0;
+                            }
+                            sync1.trigger("owl.goTo", num);
+                        }
+                    } else if (num === sync2visible[sync2visible.length - 1]) {
+                        sync1.trigger("owl.goTo", sync2visible[1])
+                    } else if (num === sync2visible[0]) {
+                        sync1.trigger("owl.goTo", num - 1)
+                    }
+
+                }
+            });
+
+
+            // ===== Scroll to Top ==== 
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 50) {
+                    $('header').addClass('headerAnim');
+                    $('#return-to-top').fadeIn(500);
+                } else {
+                    $('#return-to-top').fadeOut(500);
+                    $('header').removeClass('headerAnim');
+                }
+            });
+            $('#return-to-top').click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+            jQuery(window).on('load', function() {
+                jQuery("#preloader").fadeOut();
+            });
+
+        </script>
+        <!-- UnitSubstations -->
+        <div class="modal fade" id="UnitSubstations" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="customNavigation">
+                            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="owl-carousel popupinfoSlider">
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/USS/01.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Renewable Energy Generation Pvt. Ltd., Chennai</h3>
+                                    <p>Construction of 33kV Outdoor switching DP including associated civil works.<br>
+                                        <b>Location: </b>Dalot
+                                        <br><b>State: </b>Rajasthan <br>
+                                        <b>Year of Completion: </b>March 2013<br>
+                                        <b>Qty in Nos: </b>2</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/USS/02.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>ReGen Power Generation Pvt. Ltd., Chennai</h3>
+                                    <p>Construction of 33/0.620kV Unit Substation including all associated civil works. <br>
+                                        <b>Location: </b>Dalot & Devgarh<br><b>State: </b>Rajasthan<br>
+                                        <b>Year of Completion: </b>March 2013<br>
+                                        <b>Qty in Nos: </b>20</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/USS/03.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Wind world (India) Ltd., Mumbai</h3>
+                                    <p>Construction of 33/0.620kV Unit Substation including all associated civil works. <br> <b>Location: </b>Belgaum <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>January 2014 <br> <b>Qty in Nos: </b>25</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/USS/04.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Bindu Urja Infrastructure Ltd., Bangalore</h3>
+                                    <p>Construction of 33/0.620kV Unit Substation including all associated civil works.<br> <b>Location: </b>Bijapur <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>April 2014 <br> <b>Qty in Nos: </b>24</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/USS/05.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Renewable Energy Generation Pvt. Ltd. Chennai</h3>
+                                    <p>Construction of 33/0.620kV Unit Substation including all associated civil works.<br> <b>Location: </b>Betul <br><b>State: </b>Madhya Pradesh <br><b>Year of Completion: </b> December 2014 <br> <b>Qty in Nos: </b>18</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/USS/06.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Orange Mamatkheda Wind Pvt. Ltd New Delhi</h3>
+                                    <p>Construction of 33/0.620kV Unit Substation including all associated civil works. <br> <b>Location: </b>Mamatkheda <br><b>State: </b>Madhya Pradesh <br><b>Year of Completion: </b>April 2015<br> <b>Qty in Nos: </b>34</p>
+                                </aside>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Internal OH -->
+        <div class="modal fade" id="InternalOH" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="customNavigation">
+                            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+
+                        <div class="owl-carousel popupinfoSlider">
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/IOL/01.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Renewable Energy Generation Pvt. Ltd. Chennai</h3>
+                                    <p>Construction of 33kV Over Head Lines as following <br>
+                                        i. 8.17kMs DCOH Line with ACSR Dog<br>
+                                        ii. 6.539kMs SCOH Line with ACSR Dog <br>
+                                        <b>Location: </b>Dalot <br><b>State: </b>Rajasthan <br> <b>Year of Completion: </b>March 2013 <br><b>Route Length in kM: </b>15</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/IOL/02.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Wind world (India) Ltd Mumbai.</h3>
+                                    <p>Construction of 33kV Over Head Lines as following <br>
+                                        i. 15kMs DCOH Line with ACSR Coyote <br>
+                                        ii. 3.6kMs SCOH Line with ACSR Coyote<br>
+                                        iii. 15kMs SCOH Line with ACSR Rabit<br>
+                                        <b>Location: </b>Belgaum <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>January 2014 <br> <b>Route Length in kM: </b>34</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/IOL/03.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Bindu Urja Infrastructure Ltd. Bangalore.</h3>
+                                    <p>Construction of 33kV Over Head Lines as following <br>
+                                        i. 9.1kMs SCOH Line with ACSR Rabbit<br>
+                                        <b>Location: </b>Bijapur <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>April 2014 <br> <b>Route Length in kM: </b>9</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/IOL/04.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Orange Mamatkheda Wind Pvt. Ltd New Delhi.</h3>
+                                    <p>Construction of 33kV Over Head Lines as following <br>
+                                        i. 24.65kMs SCOH Line with ACSR Dog <br>
+                                        ii. 5kMs SCOH Line with ACSR Panther <br>
+                                        iii. 8.35kMs DCOH Line with ACSR Panther<br>
+                                        <b>Location: </b>Mamatkheda <br><b>State: </b>Madhya Pradesh <br> <b>Year of Completion: </b>April 2015 <br><b>Route Length in kM: </b>38</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/IOL/05.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>INOX Wind Infrastructure Services Ltd Noida.</h3>
+                                    <p>Construction of 33kV Over Head Lines as following <br>
+                                        i. 3.8kMs DCOH Line with ACSR Panther <br>
+                                        ii. 3.8kMs SCOH Line with ACSR Dog <br>
+                                        <b>Location: </b>Bijapur <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2018 <br><b>Route Length in kM: </b>8</p>
+                                </aside>
+                            </section>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EHV Pooling -->
+        <div class="modal fade" id="EHVPooling1" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="customNavigation">
+                            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="owl-carousel popupinfoSlider">
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/01.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Renewable Energy Generation Pvt. Ltd. Chennai</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 1x50MVA 33/132 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>132 kV <br>
+                                        <b>Project:</b> 150MW Wind Farm<br>
+                                        <b>Location: </b>Dalot <br><b>State: </b>Rajasthan <br><b>Year of Completion: </b>March 2013</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/02.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Leitner Shriram Mfg. Ltd. Chennai</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 1x65MVA 33/220 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br>
+                                        <b>Project:</b> 200MW Wind Farm <br><b>Location: </b>Tadipatri <br><b>State: </b>Andhra Pradesh <br> <b>Year of Completion: </b>July 2013</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/03.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Gamesa Wind Turbines Pvt. Ltd. Chennai</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 2x80MVA 132/33 kV Pooling Substation including construction of CRB & other associated civil works on Partial Turnkey Basis. <br><b>Voltage Level: </b>132 kV <br><b>Project:</b> 150MW Wind Farm<br> <b>Location: </b>Chandgarh <br><b>State: </b>Madhya Pradesh <br><b>Year of Completion: </b>March 2015</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/04.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>INOX Wind Infrastructure Services Ltd Noida</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 2x100MVA 33/220 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. Level:220 kV <br><b>Project: </b> 200MW Wind Farm<br> <b>Location: </b>Nippania <br><b>State: </b>Madhya Pradesh <br> <b>Year of Completion: </b>December 2015</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/05.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>INOX Wind Infrastructure Services Ltd Noida</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 2x100MVA 220/33 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> 150MW Wind Farm<br><b>Location: </b>Lahori <br><b>State: </b>Madhya Pradesh <br><b>Year of Completion: </b>March 2016</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/06.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Gamesa Wind Turbines Pvt. Ltd. Chennai</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 2x80MVA 132/33 kV Pooling Substation including construction of CRB & other associated civil works on Partial Turnkey Basis. <br><b>Voltage Level: </b>132 kV <br><b>Project:</b> 150MW Wind Farm<br> <b>Location: </b>Fatanpur <br><b>State: </b>Madhya Pradesh <br><b>Year of Completion: </b>February 2016</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/07.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Watsun Infrabuild Pvt. Ltd. Mumbai</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 3x50MVA 230/33 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br> <b>Project:</b> 300MW Wind Farm<br><b>Location: </b>Periyapatti <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>July 2016</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/08.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Aspen Infrastructure Ltd. Pune</h3>
+                                    <p>Supply, Erection, Testing & Commissioning of 3x100MVA 220/33 kV Pooling Substation including construction of CRB & other associated civil works on Partial Turnkey Basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> 100MW Wind Farm<br> <b>Location: </b>Beluguppa <br><b>State: </b>Andhra Pradesh <br><b>Year of Completion: </b>July 2016</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/09.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Sembcorp GreenInfra Wind Generation Pvt. Ltd. New Delhi</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 2x50MVA 220/33 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> 200MW Wind Farm<br> <b>Location: </b>Harappanahalli <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>August 2016</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/10.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Mytrah Energy India Ltd. Hyderabad.</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 2x100MVA 220/33 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br> <b>Project:</b> 150MW Wind Farm<br><b>Location: </b>Kurnool <br><b>State: </b>Andhra Pradesh <br> <b>Year of Completion: </b>September2016</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/11.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Renewable Energy Generation Pvt. Ltd. Chennai</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 2x80MVA 220/33 kV Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> Switching Station<br> <b>Location: </b>Karadikonda <br><b>State: </b>Andhra Pradesh <br><b>Year of Completion: </b>March 2017</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/12.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Gamesa Wind Turbines Pvt. Ltd. Chennai</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 220 kV Switching Substation including construction of CRB & other associated civil works on Partial Turnkey Basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> 225MW Wind Farm<br> <b>Location: </b>Bableshwar <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2017</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/13.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>INOX Wind Infrastructure Services Ltd. Noida</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 1x125 MVA & 1x100 MVA 220/33 kV Pooling Substation.incl. construction of CRB and other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> 300MW Wind Farm<br> <b>Location: </b>Sadla <br><b>State: </b>Gujarat <br><b>Year of Completion: </b>March 2017</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/14.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Aspen Infrastructure Ltd. Pune</h3>
+                                    <p>Supply, Erection, Testing & Commissioning of 3x100MVA 220/33 kV Pooling Substation incl construction of CRB and other accosiated civil works on Partial Turnkey Basis. <br><b>Voltage Level: </b>220 kV <br><b>Project:</b> 150MW Wind Farm<br> <b>Location: </b>Amidhyala <br><b>State: </b>Andhra Pradesh <br> <b>Year of Completion: </b>March 2017</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVP/15.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>INOX Wind Infrastructure Services Ltd. Noida</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 1x75MVA & 1x50MVA 220/33 kV Pooling Substation incl construction of CRB and other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br> <b>Project:</b> 103MW Wind Farm<br><b>Location: </b>Bijapur <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2018</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/inpro.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <p>On Going Projects</p><br>
+                                    <h3>Powerica Limited Mumbai</h3>
+                                    <p>Supply, Erection, Testing & Commissioning of 66/33 kV 1x100MVA Pooling Substation incl. other switchyard related civil works on total turnkey basis. <br><b>Voltage Level: </b>66 kV <br> <b>Project:</b> 50MW Wind Farm<br><b>Location: </b>Bhatel <br><b>State: </b>Gujarat <br> <b>Year of Completion: </b>September 2018</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/inpro.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <p>On Going Projects</p><br>
+                                    <h3>Suzlon Power Infrastructures Limited Pune.</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 1x100MVA 220/33 kV Pooling Substation incl. construction of CRB and other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br> <b>Project:</b> 200MW Wind Farm<br><b>Location: </b>Villiseri <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>September 2018</p>
+                                </aside>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EHV Transmission -->
+        <div class="modal fade" id="EHVTransmission" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="customNavigation">
+                            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="owl-carousel popupinfoSlider">
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVT/01.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Renewable Energy Generation Pvt. Ltd. Chennai.</h3>
+                                    <p>Survey, supply, erection, testing & commissioning of 230 kV Single circuit line on SC towers using ACSR Zebra conductor
+                                        between existing Pugalur TNEB substation and Windfarm Pooling substation<br><b>Voltage Level: </b></b>220 kV <br><b>Location: </b>Pugalur & Paruthiyur <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>May 2014 <br> <b>Route Length in kM: </b>59</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVT/02.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Watsun Infrabuild Pvt. Ltd</h3>
+                                    <p>Survey, supply, erection, testing & commissioning of 230 kV S/C line on D/C towers from the Windfarm Pooling Substation to TNEB 400 kV substation <br><b>Voltage Level: </b>220 kV <br><b>Location: </b>Anaikadavu <br><b>State: </b>Tamil Nadu <br><b>Year of Completion: </b>July 2016 <br><b>Route Length in kM: </b>17</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVT/03.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Gamesa Wind Turbines Pvt. Ltd. Chennai.</h3>
+                                    <p>Construction of 220kV LILO from existing Basavana Bagewadi DC line at Kudagi to switching station <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Bableshwar <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2017 <br> <b>Route Length in kM: </b>2</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVT/04.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Gamesa Wind Turbines Pvt. Ltd. Chennai.</h3>
+                                    <p>Supply, Erection, Testing & Commissioning of 220 kV DC line on DC tower with ACSR Drake conductor from switching Station to the wind farm Pooling Substation station <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Bableshwar <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2017 <br><b>Route Length in kM: </b>23</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/EHVT/05.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>INOX Wind Infrastructure Services Ltd Noida.</h3>
+                                    <p>Supply, Erection, Testing & Commissioning of 220 kV SC line on DC tower with ACSR Drake conductor from existing Basawana bagiwadi KPTCL substation to wind farm pooling substation <br><b>Voltage Level: </b>220 kV <br><b>Location: </b>Bijapur <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2018 <br><b>Route Length in kM: </b>2</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/inpro.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <p>On Going Projects</p><br>
+                                    <h3>Suzlon Power Infrastructures Limited Pune.</h3>
+                                    <p>Supply, Erection, Testing & Commissioning of 220 kV SC line on DC tower with Al 59 Moose conductor from existing Kayathar TNEB SS to Wind farm Pooling Substation <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Kayathar <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>September 2018 <br> <b>Route Length in kM: </b>21</p>
+                                </aside>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TerminalBay -->
+        <div class="modal fade" id="TerminalBay" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="customNavigation">
+                            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="owl-carousel popupinfoSlider">
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/TB/01.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Leitner Shriram Mfg. Ltd. Chennai.</h3>
+                                    <p>Construction of 1 No. of 220kV Terminal Bay Extension at existing APTRANSCO Substation. <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Tadipatri <br><b>State: </b>Andhra Pradesh <br> <b>Year of Completion: </b>July 2013 <br> <b>No of Bays: </b>1</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/TB/02.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Renewable Energy Generation Pvt. Ltd. Chennai.</h3>
+                                    <p>Construction of 1 No. of 220kV Terminal Bay Extension at existing 220/110kV TNEB Substation <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Pugalur <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>July 2016 <br> <b>No of Bays: </b>1</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/wind/TB/03.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>INOX Wind Infrastructure Services Ltd Noida.</h3>
+                                    <p>Construction of 1 No. of 220kV Terminal Bay Extension at existing 220/110/33kV KPTCL Substation <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Basawanabagiwadi <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>March 2018 <br> <b>No of Bays: </b>1</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/inpro.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <p>On Going Projects</p><br>
+                                    <h3>Powerica Limited Mumbai.</h3>
+                                    <p>Construction of 1 No. of 66kV Terminal Bay Extension at existing 132/66 GETCO Substation <br><b>Voltage Level: </b>66 kV <br> <b>Location: </b>Kambhaliya <br><b>State: </b>Gujarat <br><b>Year of Completion: </b>September 2018 <br> <b>No of Bays: </b>1</p>
+                                </aside>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EHVPoolingSubstation -->
+        <div class="modal fade" id="EHVPoolingSubstation" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="customNavigation">
+                            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="owl-carousel popupinfoSlider">
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/solor/EHVP/01.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Kshema Power Mandal Ananthapur.</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 1x50MVA 33 / 132 kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>132 kV <br> <b>Project:</b> 50MW Solar Farm<br><b>Location: </b>Sitamau <br><b>State: </b>Madhya Pradesh <br> <b>Year of Completion: </b>December 2014</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/solor/EHVP/02.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Amplus Energy Solutions Pvt. Ltd Gurgaon.</h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 220kV Pooling Substation including construction of CRB & other associated civil works on total turnkey basis. <br><b>Voltage Level: </b>220 kV <br> <b>Project:</b> 170MW Solar Farm<br><b>Location: </b>Gadag <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2018</p>
+                                </aside>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EHVTransmissionLines -->
+        <div class="modal fade" id="EHVTransmissionLines" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="customNavigation">
+                            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="owl-carousel popupinfoSlider">
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/solor/EHVT/01.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Amplus Energy Solutions Pvt. Ltd Gurgaon.</h3>
+                                    <p>Survey, supply, erection, testing & commissioning of 220 kV Double circuit line on DC towers using ACSR Drake conductor between existing 220/33kV KPTCL substation and Solar farm Pooling substation <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Gadag <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>March 2018 <br><b>Route Length in kM: </b>7</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/solor/EHVT/02.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Ecoren Energy Ltd Hyderabad.</h3>
+                                    <p>Survey, supply, erection, testing & commissioning of 110 kV Single circuit line on DC towers using ACSR Lynx conductor between existing 110/11kV KPTCL substation and Pooling substation <br><b>Voltage Level: </b>110 kV <br><b>Location: </b>Mulluar <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>April 2018 <br> <b>Route Length in kM: </b>21</p>
+                                </aside>
+                            </section>
+                            <!--<section class="slider">
               <aside class="imgBlock">
                 <figure>
                   <img src="images/solor/EHVT/03.jpg" class="img-responsive">
@@ -1074,24 +1087,24 @@ between existing Pugalur TNEB substation and Windfarm Pooling substation<br><b>V
                 <p>Construction of 220kV Terminal Bay Extension at existing 220/33kV KPTCL Substation including CRB Extension and other associated civil works. <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Harti <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2018 <br> <b>Route Length in kM: </b>2</p>
               </aside>
             </section> -->
-						
-          </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-    <!-- terminalExtention -->
-  <div class="modal fade" id="terminalExtention" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="customNavigation">
-            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="owl-carousel popupinfoSlider">
-            <!--<section class="slider">
+        <!-- terminalExtention -->
+        <div class="modal fade" id="terminalExtention" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="customNavigation">
+                            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="owl-carousel popupinfoSlider">
+                            <!--<section class="slider">
               <aside class="imgBlock">
                 <figure>
                   <img src="images/solor/EHVT/01.jpg" class="img-responsive">
@@ -1113,328 +1126,329 @@ between existing Pugalur TNEB substation and Windfarm Pooling substation<br><b>V
                 <p>Survey, supply, erection, testing & commissioning of 110 kV Single circuit line on DC towers using ACSR Lynx conductor between existing 110/11kV KPTCL substation and Pooling substation <br><b>Voltage Level: </b>110 kV <br><b>Location: </b>Mulluar <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>April 2018 <br> <b>Route Length in kM: </b>21</p>
               </aside>
             </section>-->
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/solor/EHVT/03.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Amplus Energy Solutions Pvt. Ltd Gurgaon.</h3>
-                <p>Construction of 220kV Terminal Bay Extension at existing 220/33kV KPTCL Substation including CRB Extension and other associated civil works. <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Harti <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2018 <br></p>
-              </aside>
-            </section> 
-          </div>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/solor/EHVT/03.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Amplus Energy Solutions Pvt. Ltd Gurgaon.</h3>
+                                    <p>Construction of 220kV Terminal Bay Extension at existing 220/33kV KPTCL Substation including CRB Extension and other associated civil works. <br><b>Voltage Level: </b>220 kV <br> <b>Location: </b>Harti <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2018 <br></p>
+                                </aside>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- RailwayElectrification -->
-  <div class="modal fade" id="RailwayElectrification" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="customNavigation">
-            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="owl-carousel popupinfoSlider">
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/inpro.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-							<p>On Going Projects</p><br>
-                <h3>Ircon International Ltd. </h3>
-                <p>Design, supply, installation, testing & commissioning of 25kV AC 50Hz Single Phase Railway Electrification and PSI works between Sadipur (Excl) - Manpur (Incl) Section in connection with Kiul- Gaya doubling project of Eastern Railway.<br> <b>Location: </b>Sadipur <br><b>State: </b>Bihar <br> <b>Year of Completion: </b>October 2019 <br> <b>Route Length in kM: </b>77</p>
-              </aside>
-            </section>
-          </div>
+        <!-- RailwayElectrification -->
+        <div class="modal fade" id="RailwayElectrification" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="customNavigation">
+                            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="owl-carousel popupinfoSlider">
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/inpro.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <p>On Going Projects</p><br>
+                                    <h3>Ircon International Ltd. </h3>
+                                    <p>Design, supply, installation, testing & commissioning of 25kV AC 50Hz Single Phase Railway Electrification and PSI works between Sadipur (Excl) - Manpur (Incl) Section in connection with Kiul- Gaya doubling project of Eastern Railway.<br> <b>Location: </b>Sadipur <br><b>State: </b>Bihar <br> <b>Year of Completion: </b>October 2019 <br> <b>Route Length in kM: </b>77</p>
+                                </aside>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- IndustrialElectrification -->
-  <div class="modal fade" id="IndustrialElectrification" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="customNavigation">
-            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="owl-carousel popupinfoSlider">
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/inpro.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>SRM Institute of Science & Technology</h3>
-                <p>Supply, Erection, Testing & Commissioning for external electrification works for University Complex.<br> <b>Location: </b>Sonepat <br><b>State: </b>Haryana <br><b>Year of Completion: </b>March 2014</p>
-              </aside>
-            </section>
-            
-          </div>
+
+        <!-- IndustrialElectrification -->
+        <div class="modal fade" id="IndustrialElectrification" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="customNavigation">
+                            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="owl-carousel popupinfoSlider">
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/inpro.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>SRM Institute of Science & Technology</h3>
+                                    <p>Supply, Erection, Testing & Commissioning for external electrification works for University Complex.<br> <b>Location: </b>Sonepat <br><b>State: </b>Haryana <br><b>Year of Completion: </b>March 2014</p>
+                                </aside>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- EHVconvSubstation -->
-  <div class="modal fade" id="EHVconvSubstation" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="customNavigation">
-            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="owl-carousel popupinfoSlider">
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/conv/EHVS/01.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Power Grid Corporation of India Ltd. </h3>
-                <p>Design, supply, erection, testing & commissioning of 2 Nos. 400 kV Bays including associated civil works for PGCIL at 400 kV Ajmer (RRVPNL) Substation for termination of 400 kV D/C (Quad) Line from 765 kV Ajmer (New) Substation under Green Energy Corridor ISTS Part-A <br><b>Voltage Level: </b>400 kV <br><b>Location: </b>Ajmeer <br><b>State: </b>Rajastan <br> <b>Year of Completion: </b>December 2017</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/conv/EHVS/02.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Karnataka Power Transmission Corporation Ltd. </h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 1X20 MVA 110/33/11 kV & 1X10 MVA 110/11 kV Substation including CRB construction & other associated civil works <br><b>Voltage Level: </b>110 kV <br><b>Location: </b>Dubalgundi <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>March 2018</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/conv/EHVS/03.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Karnataka Power Transmission Corporation Ltd. </h3>
-                <p>Design, Supply, Erection, Testing & Commissioning of 1X8 MVA 66/11 kV Substation including CRB construction & other associated civil works.<br><b>Voltage Level: </b>66 kV <br><b>Location: </b>Chitradurga <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>March 2018</p>
-              </aside>
-            </section>
-                        <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/conv/EHVS/04.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Power Grid Corporation of India Ltd. </h3>
-                <p>Conversion of 400kV fixed line reactors to switchable line reactors at Power Grid Substations in Southern Regions.<br><b>Voltage Level: </b>400 kV <br> <b>Location: </b>Madurai, Sriperumbudur, Udumalpet, Trichy, Salem, Thiruvalam, Kochi, Gooty, Nellore & Hyderabad <br><b>State: </b>Tamil Nadu, Kerala, Andhrapradesh & Telangana <br> <b>Year of Completion: </b>March 2018</p>
-              </aside>
-            </section>
-						<section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/inpro.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-							<p>On Going Projects</p><br>
-                <h3>Power Grid Corporation of India Ltd. </h3>
-                <p>Design, engineering, supply, erection, testing & commissioning of 110 kV and 22 kV Bays including associated civil works. <br><b>Voltage Level: </b>110 kV <br> <b>Location: </b>Thondamanatham, Kurumbapet & Villianur<br><b>State: </b>Pondichery <br><b>Year of Completion: </b>June 2018</p>
-              </aside>
-            </section>
-						<section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/inpro.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-							<p>On Going Projects</p><br>
-                <h3>Power Grid Corporation of India Ltd. </h3>
-                <p>Substation Package SS05 for <br>i) 400kV Bay extn at Pugalur substation <br> ii) 400kV Bay extn at Arasur substation <br> iii) 400kV Bay extn at Thiruvalam substation including 1x63MVAR Line Reactor <br> iv) 400kV Bay extn at Udumalpet substation under HVDC Bipole link between Western region (Raigarh Chhattisgarh) and Southern region (Pugalur Tamil Nadu) - North Trichur (Kerala) Scheme # 2: AC System strengthening at Pugalur end.
-<br><b>Voltage Level: </b>400 kV <br> <b>Location: </b>Pugalur, Arasur, Thiruvalam & Udumalpet. <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>September 2019</p>
-              </aside>
-            </section>
-						<section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/inpro.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-							<p>On Going Projects</p><br>
-                <h3>Power Grid Corporation of India Ltd. </h3>
-                <p>Substation Package SS-01 for <br> i) 132/33 kV Lungsen (New) S/S & 
-<br> ii) 132 kV Lunglei (Extn) substations for Mizoram state associated with NER Power System Improvement Project: Intra State – Mizoram
-<br><b>Voltage Level: </b>132 kV <br> <b>Location: </b>Lungsen-Lunglei  <br><b>State: </b> Mizoram  <br>	<b>Year of Completion: </b>April 2020</p>
-              </aside>
-            </section>
-          </div>
+
+        <!-- EHVconvSubstation -->
+        <div class="modal fade" id="EHVconvSubstation" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="customNavigation">
+                            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="owl-carousel popupinfoSlider">
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/conv/EHVS/01.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Power Grid Corporation of India Ltd. </h3>
+                                    <p>Design, supply, erection, testing & commissioning of 2 Nos. 400 kV Bays including associated civil works for PGCIL at 400 kV Ajmer (RRVPNL) Substation for termination of 400 kV D/C (Quad) Line from 765 kV Ajmer (New) Substation under Green Energy Corridor ISTS Part-A <br><b>Voltage Level: </b>400 kV <br><b>Location: </b>Ajmeer <br><b>State: </b>Rajastan <br> <b>Year of Completion: </b>December 2017</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/conv/EHVS/02.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Karnataka Power Transmission Corporation Ltd. </h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 1X20 MVA 110/33/11 kV & 1X10 MVA 110/11 kV Substation including CRB construction & other associated civil works <br><b>Voltage Level: </b>110 kV <br><b>Location: </b>Dubalgundi <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>March 2018</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/conv/EHVS/03.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Karnataka Power Transmission Corporation Ltd. </h3>
+                                    <p>Design, Supply, Erection, Testing & Commissioning of 1X8 MVA 66/11 kV Substation including CRB construction & other associated civil works.<br><b>Voltage Level: </b>66 kV <br><b>Location: </b>Chitradurga <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>March 2018</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/conv/EHVS/04.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Power Grid Corporation of India Ltd. </h3>
+                                    <p>Conversion of 400kV fixed line reactors to switchable line reactors at Power Grid Substations in Southern Regions.<br><b>Voltage Level: </b>400 kV <br> <b>Location: </b>Madurai, Sriperumbudur, Udumalpet, Trichy, Salem, Thiruvalam, Kochi, Gooty, Nellore & Hyderabad <br><b>State: </b>Tamil Nadu, Kerala, Andhrapradesh & Telangana <br> <b>Year of Completion: </b>March 2018</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/inpro.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <p>On Going Projects</p><br>
+                                    <h3>Power Grid Corporation of India Ltd. </h3>
+                                    <p>Design, engineering, supply, erection, testing & commissioning of 110 kV and 22 kV Bays including associated civil works. <br><b>Voltage Level: </b>110 kV <br> <b>Location: </b>Thondamanatham, Kurumbapet & Villianur<br><b>State: </b>Pondichery <br><b>Year of Completion: </b>June 2018</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/inpro.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <p>On Going Projects</p><br>
+                                    <h3>Power Grid Corporation of India Ltd. </h3>
+                                    <p>Substation Package SS05 for <br>i) 400kV Bay extn at Pugalur substation <br> ii) 400kV Bay extn at Arasur substation <br> iii) 400kV Bay extn at Thiruvalam substation including 1x63MVAR Line Reactor <br> iv) 400kV Bay extn at Udumalpet substation under HVDC Bipole link between Western region (Raigarh Chhattisgarh) and Southern region (Pugalur Tamil Nadu) - North Trichur (Kerala) Scheme # 2: AC System strengthening at Pugalur end.
+                                        <br><b>Voltage Level: </b>400 kV <br> <b>Location: </b>Pugalur, Arasur, Thiruvalam & Udumalpet. <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>September 2019</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/inpro.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <p>On Going Projects</p><br>
+                                    <h3>Power Grid Corporation of India Ltd. </h3>
+                                    <p>Substation Package SS-01 for <br> i) 132/33 kV Lungsen (New) S/S &
+                                        <br> ii) 132 kV Lunglei (Extn) substations for Mizoram state associated with NER Power System Improvement Project: Intra State – Mizoram
+                                        <br><b>Voltage Level: </b>132 kV <br> <b>Location: </b>Lungsen-Lunglei <br><b>State: </b> Mizoram <br> <b>Year of Completion: </b>April 2020</p>
+                                </aside>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- HVEHVTransmission -->
-  <div class="modal fade" id="HVEHVTransmission" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="customNavigation">
-            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="owl-carousel popupinfoSlider">
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/conv/HVEHV/01.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Powertech Constructions Pvt. Ltd (Client: TANTRANSCO)</h3>
-                <p>Supply, Civil, Erection, Testing & Commissioning of 230 kV DC line with ACSR Zebra conductor and earth wire for the portion of line from location AP1 to AP72 (Reach-I II & III) of Koladi-Koyambedu 230 kV SS of Alamathy 400 kV SS to Koyambedu 230 kV SS including 56 Nos. of well foundation & 13 Nos. of Multi Circuit towers <br><b>Voltage Level: </b>230kV <br> <b>Location: </b>Koyambedu <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>February 2016</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/conv/HVEHV/02.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Karnataka Power Transmission Corporation Ltd. </h3>
-                <p>Construction of 110kV SC Transmission line on DC towers from 110kV Humnabad-Bhalki SC Transmission line to the proposed 110/33/11kV Dubalgundi sub-station <br><b>Voltage Level: </b>110 kV <br><b>Location: </b>Dubalgundi <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>March 2018</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/conv/HVEHV/03.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Karnataka Power Transmission Corporation Ltd. </h3>
-                <p>Construction of 66kV SC Transmission line on DC Towers from existing 66kV Hosadurga-Bagur line to the proposed 66/11kV Sub-Station at Neeragunda Gate <br><b>Voltage Level: </b>66 kV <br> <b>Location: </b>Chitradurga <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2018</p>
-              </aside>
-            </section>
-						<section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/inpro.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-							<p>On Going Projects</p><br>
-                <h3>Power Grid Corporation of India Ltd. </h3>
-                <p>Construction of 110 kV S/C Transmission line with ACSR Panther on DC Towers from 220/110/22kV PED Villianur SS to 110/22kV PED Bahoor SS.
- <br> <b>Voltage Level: </b>110 kV <br><b>Location: </b>Villianur <br><b>State: </b>Pondichery <br> <b>Year of Completion: </b>June 2018</p>
-              </aside>
-            </section>
-						<section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/inpro.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-							<p>On Going Projects</p><br>
-                <h3>Power Grid Corporation of India Ltd. </h3>
-                <p>132 kV Transmission Line package TW 01 for <br>  
-i)132 kV S/C Lungsen - Chawngte TL (Route length 39 kMs) <br>
-ii)132 kV S/C Chawngte - S.Bungtlang TL (Route length 45 kMs) <br>
-iii)132 kV S/C Lunglei – Lungsen TL (Route length 1 kM) <br>
-iv)OPGW Live line stringing for a Route length of 172 kMs <br>
-under NER Power System Improvement Project : Intra State – Mizoram 
- <br><b>Voltage Level: </b>132 kV <br> <b>Location: </b>Chawngte <br><b>State: </b>Mizoram <br> <b>Year of Completion: </b>March 2020</p>
-              </aside>
-            </section>
-          </div>
+
+        <!-- HVEHVTransmission -->
+        <div class="modal fade" id="HVEHVTransmission" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="customNavigation">
+                            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="owl-carousel popupinfoSlider">
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/conv/HVEHV/01.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Powertech Constructions Pvt. Ltd (Client: TANTRANSCO)</h3>
+                                    <p>Supply, Civil, Erection, Testing & Commissioning of 230 kV DC line with ACSR Zebra conductor and earth wire for the portion of line from location AP1 to AP72 (Reach-I II & III) of Koladi-Koyambedu 230 kV SS of Alamathy 400 kV SS to Koyambedu 230 kV SS including 56 Nos. of well foundation & 13 Nos. of Multi Circuit towers <br><b>Voltage Level: </b>230kV <br> <b>Location: </b>Koyambedu <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>February 2016</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/conv/HVEHV/02.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Karnataka Power Transmission Corporation Ltd. </h3>
+                                    <p>Construction of 110kV SC Transmission line on DC towers from 110kV Humnabad-Bhalki SC Transmission line to the proposed 110/33/11kV Dubalgundi sub-station <br><b>Voltage Level: </b>110 kV <br><b>Location: </b>Dubalgundi <br><b>State: </b>Karnataka <br><b>Year of Completion: </b>March 2018</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/conv/HVEHV/03.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Karnataka Power Transmission Corporation Ltd. </h3>
+                                    <p>Construction of 66kV SC Transmission line on DC Towers from existing 66kV Hosadurga-Bagur line to the proposed 66/11kV Sub-Station at Neeragunda Gate <br><b>Voltage Level: </b>66 kV <br> <b>Location: </b>Chitradurga <br><b>State: </b>Karnataka <br> <b>Year of Completion: </b>March 2018</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/inpro.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <p>On Going Projects</p><br>
+                                    <h3>Power Grid Corporation of India Ltd. </h3>
+                                    <p>Construction of 110 kV S/C Transmission line with ACSR Panther on DC Towers from 220/110/22kV PED Villianur SS to 110/22kV PED Bahoor SS.
+                                        <br> <b>Voltage Level: </b>110 kV <br><b>Location: </b>Villianur <br><b>State: </b>Pondichery <br> <b>Year of Completion: </b>June 2018</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/inpro.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <p>On Going Projects</p><br>
+                                    <h3>Power Grid Corporation of India Ltd. </h3>
+                                    <p>132 kV Transmission Line package TW 01 for <br>
+                                        i)132 kV S/C Lungsen - Chawngte TL (Route length 39 kMs) <br>
+                                        ii)132 kV S/C Chawngte - S.Bungtlang TL (Route length 45 kMs) <br>
+                                        iii)132 kV S/C Lunglei – Lungsen TL (Route length 1 kM) <br>
+                                        iv)OPGW Live line stringing for a Route length of 172 kMs <br>
+                                        under NER Power System Improvement Project : Intra State – Mizoram
+                                        <br><b>Voltage Level: </b>132 kV <br> <b>Location: </b>Chawngte <br><b>State: </b>Mizoram <br> <b>Year of Completion: </b>March 2020</p>
+                                </aside>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-	 <!-- DSSW -->
-  <div class="modal fade" id="DSSW" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="customNavigation">
-            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="owl-carousel popupinfoSlider">
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/conv/DSSW/01.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Powertech Constructions Pvt. Ltd ( Client: TANGEDCO)</h3>
-                <p>Execution of strengthening of didtribution networks under R-APDRP (Part-B) scheme in Dindivanam & Kallakurichi towns on total turnkey basis in the Villupuram Electricity Distribution circle of TANGEDCO
-<br> <b>Location: </b>Dindivanam & Kallakurichi <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>March 2017 <br> <b>Route Length in kM: </b>101</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/conv/DSSW/02.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-                <h3>Ashoka Buildcon Ltd (Client: TANGEDCO) </h3>
-                <p>Execution of strengthening of didtribution networks under R-APDRP (Part-B) scheme in Chennai U.A and Chengalpattu towns covered under Chennai South Region of TANGEDCO
-<br><b>Location: </b>Chennai and Chengalpattu <br><b>State: </b>Tamil Nadu <br><b>Year of Completion: </b>March 2017 <br> <b>Route Length in kM: </b>36</p>
-              </aside>
-            </section>
-<section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/inpro.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-							<p>On Going Projects</p><br>
-                <h3>Power Grid Corporation of India Ltd. </h3>
-                <p>Dismantling of existing LT system Supply, Erection, Testing & Commission of new LT system including civil works at Udumalpet Substation.<br> <b>Location: </b>Udumalpet <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>September 2018</p>
-              </aside>
-            </section>
-            <section class="slider">
-              <aside class="imgBlock">
-                <figure>
-                  <img src="images/inpro.jpg" class="img-responsive">
-                </figure>
-              </aside>
-              <aside class="discInfo">
-							<p>On Going Projects</p><br>
-                <h3>Ashoka Buildcon Ltd. (Client: Jharkhand Bijli Vitaran Nigam Ltd)</h3>
-                <p>Supply, Erection, Testing and Commissioning of Urban Electrification works at Gumla, Simdega & Lohardaga town in Jharkhand State.<br> <b>Location: </b>Gumla, Simdega & Lohardaga <br><b>State: </b>Jharkhand <br> <b>Year of Completion: </b>December 2018</p>
-              </aside>
-            </section>
-          </div>
+        <!-- DSSW -->
+        <div class="modal fade" id="DSSW" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="customNavigation">
+                            <a class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="owl-carousel popupinfoSlider">
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/conv/DSSW/01.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Powertech Constructions Pvt. Ltd ( Client: TANGEDCO)</h3>
+                                    <p>Execution of strengthening of didtribution networks under R-APDRP (Part-B) scheme in Dindivanam & Kallakurichi towns on total turnkey basis in the Villupuram Electricity Distribution circle of TANGEDCO
+                                        <br> <b>Location: </b>Dindivanam & Kallakurichi <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>March 2017 <br> <b>Route Length in kM: </b>101</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/conv/DSSW/02.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <h3>Ashoka Buildcon Ltd (Client: TANGEDCO) </h3>
+                                    <p>Execution of strengthening of didtribution networks under R-APDRP (Part-B) scheme in Chennai U.A and Chengalpattu towns covered under Chennai South Region of TANGEDCO
+                                        <br><b>Location: </b>Chennai and Chengalpattu <br><b>State: </b>Tamil Nadu <br><b>Year of Completion: </b>March 2017 <br> <b>Route Length in kM: </b>36</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/inpro.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <p>On Going Projects</p><br>
+                                    <h3>Power Grid Corporation of India Ltd. </h3>
+                                    <p>Dismantling of existing LT system Supply, Erection, Testing & Commission of new LT system including civil works at Udumalpet Substation.<br> <b>Location: </b>Udumalpet <br><b>State: </b>Tamil Nadu <br> <b>Year of Completion: </b>September 2018</p>
+                                </aside>
+                            </section>
+                            <section class="slider">
+                                <aside class="imgBlock">
+                                    <figure>
+                                        <img src="images/inpro.jpg" class="img-responsive">
+                                    </figure>
+                                </aside>
+                                <aside class="discInfo">
+                                    <p>On Going Projects</p><br>
+                                    <h3>Ashoka Buildcon Ltd. (Client: Jharkhand Bijli Vitaran Nigam Ltd)</h3>
+                                    <p>Supply, Erection, Testing and Commissioning of Urban Electrification works at Gumla, Simdega & Lohardaga town in Jharkhand State.<br> <b>Location: </b>Gumla, Simdega & Lohardaga <br><b>State: </b>Jharkhand <br> <b>Year of Completion: </b>December 2018</p>
+                                </aside>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  
-  <script language="javascript" type="text/javascript" src="js/common.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js'></script>
-  
-</body>  
+
+        <script language="javascript" type="text/javascript" src="js/common.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js'></script>
+
+</body>
+
 </html>
