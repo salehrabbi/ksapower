@@ -1,0 +1,18 @@
+$f: 'Freight';
+
+.career-page {
+    font-family: $f;
+
+    h3.aboutusHead,
+    p.careerInfo,
+    .careersInfo .careerslftInfo p,
+    .careersInfo .careerslftInfo span,
+    .careersInfo .careerslftInfo a.btnapply,
+    p.ContTitle,
+    .ContactUsForm form input.form-control {
+        font-family: $f !important;
+    }
+    p.careerInfo{
+        text-align: left;
+    }
+}

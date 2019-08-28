@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Freight';
+    src: url('Freight-SansLight.eot');
+    src: url('Freight-SansLight.eot?#iefix') format('embedded-opentype'),
+        url('Freight-SansLight.woff2') format('woff2'),
+        url('Freight-SansLight.woff') format('woff'),
+        url('Freight-SansLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+

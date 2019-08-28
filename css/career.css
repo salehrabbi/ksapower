@@ -1,0 +1,15 @@
+.career-page {
+  font-family: "Freight";
+}
+.career-page h3.aboutusHead,
+.career-page p.careerInfo,
+.career-page .careersInfo .careerslftInfo p,
+.career-page .careersInfo .careerslftInfo span,
+.career-page .careersInfo .careerslftInfo a.btnapply,
+.career-page p.ContTitle,
+.career-page .ContactUsForm form input.form-control {
+  font-family: "Freight" !important;
+}
+.career-page p.careerInfo {
+  text-align: left;
+}
