@@ -1111,7 +1111,7 @@ figure.downloadSafty:hover a {
     background: #f6f6f6;
 }
 
-.summaryInfo .table tbody tr:nth-child(even) td {
+.summaryInfo .table tbody tr:nth-child(even){
     background: #f9f9f9;
 }
 
@@ -1219,7 +1219,7 @@ figure.downloadSafty:hover a {
     background: #f6f6f6;
 }
 
-.portfolioInfo .table tbody tr:nth-child(even) td {
+.portfolioInfo .table tbody tr:nth-child(even) {
     background: #f9f9f9;
 }
 
@@ -4675,4 +4675,17 @@ ul.experience .checkbox input[type="checkbox"]:checked + label {
 
 .areasofoperation p.operation > a:before {
     display: none;
+}
+
+
+.table tr:hover,
+.table tbody tr:nth-child(2n):hover {
+    background: #0a4b7f !important;
+    color: #fff;
+
+}
+
+
+.table tbody tr:hover td {
+    color: #fff !important;
 }
