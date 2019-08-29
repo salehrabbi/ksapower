@@ -12,14 +12,14 @@ gradient.addColorStop(1, 'rgba(255, 0, 0, 0)');
 
 
 var data  = {
-    labels: [ '2011-12', '2012-13', '2013-14', '2014-15', '2015-16', '2016-17', '2017-18' ],
+    labels: [ '2011-12', '2012-13', '2013-14', '2014-15', '2015-16', '2016-17', '2017-18', '2018-19' ],
     datasets: [{
 			label: 'In Millions',
 			backgroundColor: gradient,
 			pointBackgroundColor: 'white',
 			borderWidth: 1,
 			borderColor: '#911215',
-			data: [10, 250, 400, 1300, 1350, 1700, 1900]
+			data: [10, 250, 400, 1300, 1350, 1700, 1900, 200]
     }]
 };
 
