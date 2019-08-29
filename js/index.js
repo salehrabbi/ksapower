@@ -19,7 +19,7 @@ var data  = {
 			pointBackgroundColor: 'white',
 			borderWidth: 1,
 			borderColor: '#911215',
-			data: [10, 250, 400, 1300, 1350, 1700, 1900, 200]
+			data: [10, 250, 400, 1300, 1350, 1700, 1900, 2200]
     }]
 };
 
