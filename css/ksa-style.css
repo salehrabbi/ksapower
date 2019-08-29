@@ -4689,7 +4689,7 @@ ul.experience .checkbox input[type="checkbox"]:checked + label {
     color: #fff !important;
 }
 
-.areasofoperation h3.aboutusHead {
+.areasofoperation h3.aboutusHead[data-toggle="collapse"] {
     padding: 25px 0;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -4708,7 +4708,7 @@ ul.experience .checkbox input[type="checkbox"]:checked + label {
     margin-bottom: 30px;
 }
 
-.areasofoperation h3.aboutusHead:hover {
+.areasofoperation h3.aboutusHead[data-toggle="collapse"]:hover {
     background: #a6cf39;
     color: #fff;
     border-color: #a6cf39;
