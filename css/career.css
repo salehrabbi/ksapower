@@ -1,5 +1,5 @@
 .career-page {
-  font-family: "Freight";
+  font-family: "robotoregular";
 }
 .career-page h3.aboutusHead,
 .career-page p.careerInfo,
@@ -8,7 +8,7 @@
 .career-page .careersInfo .careerslftInfo a.btnapply,
 .career-page p.ContTitle,
 .career-page .ContactUsForm form input.form-control {
-  font-family: "Freight" !important;
+  font-family: "robotoregular" !important;
 }
 .career-page p.careerInfo,
 .career-page p {
